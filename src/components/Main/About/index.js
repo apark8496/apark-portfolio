@@ -1,34 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from "react";
 
-function About() {
-    const githubEndpoint = 'https://api.github.com/users/apark8496';
-    const [githubData, setGithubData] = useState('');
-
-    useEffect(() => {
-        getGithubData();
-    }, []);
-
-    const getGithubData = async () => {
-        try {
-            const res = await fetch(githubEndpoint);
-            const data = await res.json();
-            setGithubData(data);
-        } catch (err) {
-            console.error(err);
-        }
-    };
-
+function About() {    
     return (
         <section>
             <h2 className='heading'>Hello! I'm Ashley.</h2>
             <h3 className='sub-heading'>Full Stack Web Developer</h3>
             <div className='bio-container'>
-                <img
-					className='my-pic'
-					src={githubData.avatar_url}
-					alt=''
-				/>
-
+               
                 <article className='bio'>
                     I'm a web developer from North Carolina, and currently live with my husband and two cats 🐈.
                     Apart from coding, you can find me spending my time doing all things nerdy! 📜 Such as reading, 

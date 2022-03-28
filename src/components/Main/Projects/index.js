@@ -3,7 +3,12 @@ import React, { useState } from "react";
 
 function Projects() {
     const [featuredProjects] = useState([
-
+        {
+            title: "Skittydex Pokemon Team Builder & Blog",
+            deployedUrl: "https://skittydex.herokuapp.com",
+            ghRepoUrl: "https://github.com/apark8496/SkittyDex",
+            imagePath: "skittydex"
+        },
         {
             title: "Budget Tracker - PWA",
             deployedUrl: "https://tranquil-sea-41492.herokuapp.com/",
@@ -16,6 +21,13 @@ function Projects() {
             ghRepoUrl: "https://github.com/apark8496/rainy-day-weather-app/",
             imagePath: "weather-dashboard"
         },
+        {
+            title: "The Book Hangover Cure",
+            deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
+            ghRepoUrl: "https://github.com/apark8496/The-Book-Hangover-Cure",
+            imagePath: "book-hangover"
+        },
+
     ])
     return (
         <div>
@@ -24,16 +36,16 @@ function Projects() {
                 {featuredProjects.map((project) => (
                     <div className="project-card" key={project.title}>
                         <div className="card-img">
-                            <img className="project-img" src={require(`../../../assets/images/project-screenshots/${project.imagePath}.png`)} alt={project.title}></img>
+                            <img className="project-img" src={require(`../../../assets/images/project-images/${project.imagePath}.png`)} alt={project.title}></img>
                         </div>
                         <div className="card-title">
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-links">
                                 <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-                                    <img className="project-link-icon" src={require("../../../assets/icons/project-link/repo-link.png")} alt="GitHub icon" />
+                                    <img className="project-link-icon" src={require("../../../assets/icons/project-link/github-site.png")} alt="GitHub icon" />
                                 </a>
                                 <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-                                    <img className="project-link-icon" src={require("../../../assets/icons/project-link/app-link.png")} alt="Website icon" />
+                                    <img className="project-link-icon" src={require("../../../assets/icons/project-link/site-link.png")} alt="Website icon" />
                                 </a>
                             </p>
                         </div>
