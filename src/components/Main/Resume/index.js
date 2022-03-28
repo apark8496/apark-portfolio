@@ -1,5 +1,5 @@
 import React from 'react';
-import { SKILLS } from '../../utils/skills';
+import { SKILLS } from '../../../utils/skills';
 
 function Resume() {
 	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');

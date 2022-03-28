@@ -10,11 +10,6 @@ export const SKILLS = [
 		type: 'front-end',
 	},
 	{
-		name: 'Redux',
-		file: 'redux.svg',
-		type: 'front-end',
-	},
-	{
 		name: 'HTML',
 		file: 'html-5.svg',
 		type: 'front-end',
@@ -45,18 +40,8 @@ export const SKILLS = [
 		type: 'front-end',
 	},
 	{
-		name: 'Materialize',
-		file: 'materializecss.svg',
-		type: 'front-end',
-	},
-	{
 		name: 'Bulma',
 		file: 'bulma.svg',
-		type: 'front-end',
-	},
-	{
-		name: 'Jest',
-		file: 'jest.svg',
 		type: 'front-end',
 	},
 	{
@@ -75,11 +60,6 @@ export const SKILLS = [
 		type: 'front-end',
 	},
 	{
-		name: 'GraphQL Apollo Server',
-		file: 'apollo.svg',
-		type: 'back-end',
-	},
-	{
 		name: 'MySQL',
 		file: 'mysql.svg',
 		type: 'back-end',
@@ -93,10 +73,5 @@ export const SKILLS = [
 		name: 'Git',
 		file: 'git-icon.svg',
 		type: 'other',
-	},
-	{
-		name: 'Webpack',
-		file: 'webpack.svg',
-		type: 'front-end',
-	},
+	}
 ];

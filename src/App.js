@@ -1,47 +1,38 @@
-import './index.css';
 
-import React, { useState } from 'react';
-
-// import the components for the portfolio into main App
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import React, {useState} from 'react';
 import Header from './components/Header';
-import Projects from './components/Projects';
-import Resume from './components/Resume';
-import { SECTIONS } from './utils/navItems';
+import Main from './components/Main';
+import Footer from './components/Footer';
 
-// Main page load is about
 function App() {
-	const [currentSection, setCurrentSection] = useState('About');
+  // arr of nav links
+  const [navLinks] = useState([
+    "About Me", 
+    "My Projects",
+    "Contact Me", 
+    "My Resume"
+  ]);
 
-    // pages to render on click
-	const renderPage = () => {
-		switch (currentSection) {
-			case 'Projects':
-				return <Projects />;
-			case 'Contact':
-				return <Contact />;
-			case 'Resume':
-				return <Resume />;
-			default:
-				return <About />;
-		}
-	};
+  // set current display based on nav link selection
+  const [currentDisplay, setCurrentDisplay] = useState(navLinks[0]);
 
-	return (
-		<div className='app-container'>
-			<div className='content-wrap'>
-				<Header
-					sections={SECTIONS}
-					currentSection={currentSection}
-					setCurrentSection={setCurrentSection}
-				/>
-				{renderPage(currentSection)}
-			</div>
-			<Footer />
-		</div>
-	);
+  return (
+    <div>
+        {/* passing nav links and current display settings on to header as props */}
+        <Header
+          navLinks={navLinks}
+          currentDisplay={currentDisplay}
+          setCurrentDisplay={setCurrentDisplay}
+        ></Header>
+
+        {/* passing current display settings on to main section as props */}
+        <Main
+          currentDisplay={currentDisplay}
+        ></Main>
+
+        <Footer></Footer>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,378 @@
+:root {
+    --primary-color: #808a89;
+    --accent-color: #40bdb8;
+}
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: var(--primary-color);
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px;
+    display: flex;
+}
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+/* header */
+h1 {
+    text-align: center;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nav-item {
+    margin: auto;
+    margin-bottom: 8px;
+    align-content: space-around;
+}
+.nav-link {
+    padding: 5px 0 2px;
+    font-size: 15px;
+    margin: auto;
+}
+.nav-link:hover {
+    cursor: pointer;
+    border-bottom: 1px solid var(--accent-color);
+}
+.active-link {
+    color: var(--accent-color);
+    text-decoration: solid 1px var(--accent-color);
+}
+/* main */
+#root {
+    width: 100%;
+}
+main {
+    margin: auto;
+    margin-bottom:50px;
+    width: 90%;
+    display: flex;
+}
+
+main div {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* about */
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.bio {
+    margin-bottom: 50px;
+}
+
+.my-pic {
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* projects */
+.project-card {
+    border-bottom: var(--primary-color) solid 1px;
+    margin-bottom: 50px;
+}
+.project-card:last-of-type {
+    border-bottom: none;
+}
+.project-img {
+    width: 100%;
+    border-radius: 8px;
+    border: var(--primary-color) 1px solid;
+}
+.card-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.project-title {
+    margin: 10px 0;
+    width: 75%;
+}
+.project-links {
+    width: 25%;
+}
+.project-link-icon {
+    height: 23px;
+    border-radius: 50%;
+    padding: 8px;
+}
+.project-link-icon:hover {
+    box-shadow: 0px 0px 3px var(--primary-color);
+}
+
+/* contact */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+#contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    width: 100%;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    margin: 5px 0 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    outline: none;
+    border: 1.5px solid var(--accent-color);
+}
+
+.submit-btn {
+    background-color: var(--primary-color);
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.submit-btn:active {
+    transform: translateY(1.5px);
+}
+
+.error-msg p {
+    color: #ab3a2b;
+    font-style: italic;
+}
+
+/* resume */
+.resume {
+    text-align: center;
+}
+
+.resume-link {
+    padding: 5px 10px;
+    margin: auto;
+    border: #40bdb8 1.5px solid;
+    border-radius: 5px;
+}
+
+.resume-link:hover {
+    color: white;
+    background-color: var(--accent-color);
+    padding: 5px 10px;
+}
+
+.resume-link:active {
+    transform: translateY(1.5px);
+}
+
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+}
+footer p {
+    margin: 5px 15px 10px;
+    padding: auto;
+    font-size: 12px;
+    order: 2;
+}
+.footer-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 5px 0 0;
+}
+.footer-icons {
+    height: 40px;
+    margin: 3px 10px;
+}
+
+@media screen and (min-width: 420px){
+    .nav-link {
+        font-size: 20px;
+    }
+    .avatar {
+        width: 90%;
+    }
+    .about-bio p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    #root {
+        width: 95%;
+        margin: auto;
+    }
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+    .avatar {
+        width: 50%;
+    }
+    .project-title {
+        font-size: 20px;
+        width: 82%;
+    }
+    .project-links {
+        width: 18%;
+    }
+    .project-link-icon {
+        height: 25px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #root {
+        width: 90%;
+        margin: auto;
+    }
+    .avatar {
+        width: 40%;
+    }
+    .project-title {
+        font-size: 24px;
+    }
+    .project-link-icon {
+        height: 32px;
+    }
+    #contact-form {
+        width: 80%;
+        margin: auto;
+    }
+    .proficiencies {
+        flex-direction: row;
+    }
+    .proficiencies div {
+        padding: 0 10px;
+    }
+    .proficiencies div h3 {
+        text-align: center;
+    }
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    main {
+        width: 95%;
+    }
+    header {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        align-content: space-between;
+    }
+    h1 {
+        display: inline;
+        font-size: 26px;
+        padding-bottom: 0;
+        width: 40%;
+        text-align: left;
+    }
+    nav {
+        margin: auto;
+        width: 60%;
+        padding-bottom: 0;
+    }
+    .nav-links {
+        padding-bottom: 0;
+    }
+    .nav-item {
+        padding-top: 10px;
+    }
+    .bio-container {
+        flex-direction: row;
+    }
+    .my-pic {
+        width: 30%;
+        padding: 10px;
+    }
+    .bio {
+        width: 70%;
+        padding: 0 30px 0 30px;
+        margin: auto;
+    }
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        margin-bottom: 50px;
+    }
+    .project-card {
+        width: 45%;
+        margin: auto;
+        border-bottom: none;
+    }
+    .project-title {
+        width: 70%;
+    }
+    .project-links {
+        width: 30%;
+    }
+    #contact-form {
+        width: 60%;
+    }
+    .proficiencies {
+        width: 70%;
+        margin: auto;
+    }
+    footer {
+        width: 100%;
+        flex-direction: row;
+    }
+    footer p {
+        width: 25%;
+        margin-left: 50px;
+        font-size: 20px;
+        order: 1;
+    }
+    .footer-links {
+        width: 75%;
+        margin: 0 100px;
+        order: 2;
+    }
+    .footer-link {
+        margin: auto;
+    }
+}
