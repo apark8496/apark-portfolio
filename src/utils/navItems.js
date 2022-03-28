@@ -6,9 +6,9 @@ export const SECTIONS = [
 		name: 'Projects',
 	},
 	{
-		name: 'Contact',
-	},
-	{
 		name: 'Resume',
+	},
+    {
+		name: 'Contact',
 	},
 ];
