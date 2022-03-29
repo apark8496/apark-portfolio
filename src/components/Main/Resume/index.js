@@ -2,6 +2,7 @@ import React from 'react';
 import { SKILLS } from '../../../utils/skills.js';
 
 function Resume() {
+	// list known skills on resume page
 	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
 	const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
 // provide resume
@@ -28,7 +29,7 @@ function Resume() {
 				{frontendSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../assets/skill-icons/${skill.file}`).default}
+							src={require(`../../skill-icons${skill.file}`).default}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
@@ -41,7 +42,7 @@ function Resume() {
 				{backendSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../assets/skill-icons/${skill.file}`).default}
+							src={require(`../../skill-icons${skill.file}`).default}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>

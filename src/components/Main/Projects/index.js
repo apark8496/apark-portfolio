@@ -36,16 +36,16 @@ function Projects() {
                 {featuredProjects.map((project) => (
                     <div className="project-card" key={project.title}>
                         <div className="card-img">
-                            <img className="project-img" src={require(`../../../assets/images/project-images/${project.imagePath}.png`)} alt={project.title}></img>
+                            <img className="project-img" src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title}></img>
                         </div>
                         <div className="card-title">
                             <h3 className="project-title">{project.title}</h3>
                             <p className="project-links">
                                 <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-                                    <img className="project-link-icon" src={require("../../../assets/icons/project-link/github-site.png")} alt="GitHub icon" />
+                                    <img className="project-link-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
                                 </a>
                                 <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-                                    <img className="project-link-icon" src={require("../../../assets/icons/project-link/site-link.png")} alt="Website icon" />
+                                    <img className="project-link-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
                                 </a>
                             </p>
                         </div>

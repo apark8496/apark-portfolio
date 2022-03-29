@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
+// contact info in footer (github/linkedin)
 function Icon({ links }) {
 	return (
 		<div className='flex centered wrap'>

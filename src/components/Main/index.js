@@ -4,7 +4,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Resume from "./Resume";
 
-function Main(props) {
+function Portfolio(props) {
 
     // destructure props
     const { currentDisplay } = props;
@@ -21,4 +21,4 @@ function Main(props) {
     }
 }
 
-export default Main;
+export default Portfolio;
