@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light+Two&display=swap');
+
 :root {
   --sage: #a3ac9b;
   --lavender: #c2aecd;
 }
 
 * {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Indie Flower", cursive;
   color: var(--sage);
+  font-weight: 600;
 }
 
 html {
@@ -68,21 +71,7 @@ h1 {
 }
 
 /* Portfolio main*/
-/* #root {
-  width: 100%;
-}
-
-main {
-  margin: auto;
-  margin-bottom: 50px;
-  width: 90%;
-  display: flex;
-}
-
-main div {
-  width: 100%;
-}
- */
+ 
 h1,
 h2,
 h3 {
@@ -100,13 +89,15 @@ h3 {
 
 .bio {
   text-align: left;
-  background-color: #a3ac9b;
+  background-color: var(--sage);
   max-width: 50%;
   border-radius: 10px;
   padding: 3% 6%;
   color: #f5f5f5;
   opacity: 75%;
   line-height: 2rem;
+  font-family: 'Shadows Into Light Two', cursive;
+  font-weight: 400;
 }
 
 .my-pic {
@@ -268,7 +259,7 @@ h3 {
 }
 
 .skill-text {
-  font-size: 12px;
+  font-size: 15px;
   color: #f5f5f5;
 }
 
@@ -290,7 +281,8 @@ h3 {
 .icon-link:visited {
   text-decoration: none;
   font-size: 50px;
-  /* transition: font-size .5s ease-in-out, color .5s ease-in-out, background-color .5s ease-in-out; */
+  transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -299,13 +291,17 @@ h3 {
   color: var(--lavender);
 }
 
+/* media */
 @media screen and (min-width: 420px) {
   .nav-link {
     font-size: 20px;
   }
   .my-pic {
-    width: 90%;
+    width: 60%;
+    margin-bottom: 5%;
+
   }
+
   .bio p {
     font-size: 20px;
   }
@@ -316,23 +312,30 @@ h3 {
     width: 95%;
     margin: auto;
   }
+
   .nav-links {
     display: flex;
     flex-direction: row;
   }
+
   .my-pic {
     width: 50%;
+    margin-bottom: 5%;
   }
+
   .project-title {
     font-size: 20px;
     width: 82%;
   }
+
   .project-links {
     width: 18%;
   }
+
   .project-link-icon {
     height: 25px;
   }
+
   footer p {
     font-size: 15px;
   }

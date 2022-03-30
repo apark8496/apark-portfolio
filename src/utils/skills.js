@@ -1,15 +1,5 @@
 export const SKILLS = [
 	{
-		name: 'JavaScript',
-		file: 'javascript.svg',
-		type: 'front-end',
-	},
-	{
-		name: 'React',
-		file: 'react.svg',
-		type: 'front-end',
-	},
-	{
 		name: 'HTML',
 		file: 'html-5.svg',
 		type: 'front-end',
@@ -20,10 +10,26 @@ export const SKILLS = [
 		type: 'front-end',
 	},
 	{
+		name: 'JavaScript',
+		file: 'javascript.svg',
+		type: 'front-end',
+	},
+	{
+		name: 'React',
+		file: 'react.svg',
+		type: 'front-end',
+	},
+	{
 		name: 'jQuery',
 		file: 'jquery.svg',
 		type: 'front-end',
 	},
+	{
+		name: 'Bootstrap',
+		file: 'bootstrap.svg',
+		type: 'front-end',
+	},
+
 	{
 		name: 'Node.js',
 		file: 'nodejs.svg',
@@ -34,24 +40,10 @@ export const SKILLS = [
 		file: 'expressjs.svg',
 		type: 'back-end',
 	},
-	{
-		name: 'Bootstrap',
-		file: 'bootstrap.svg',
-		type: 'front-end',
-	},
-	{
-		name: 'Bulma',
-		file: 'bulma.svg',
-		type: 'front-end',
-	},
+
 	{
 		name: 'MongoDB',
 		file: 'mongodb.svg',
-		type: 'back-end',
-	},
-	{
-		name: 'Mongoose',
-		file: 'mongoose.svg',
 		type: 'back-end',
 	},
 	{

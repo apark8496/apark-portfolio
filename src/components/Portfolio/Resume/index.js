@@ -5,6 +5,8 @@ function Resume() {
 	// list known skills on resume page
 	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
 	const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
+	// add in more (frameworks/databases/programming languages --> not just front/back skill list)
+	
 	// provide resume
 	return (
 		<section className='resume-section'>
@@ -27,7 +29,7 @@ function Resume() {
 				{frontendSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../../assets/skill-icons/${skill.file}`).svg}
+							src={require(`../../../assets/skill-icons/${skill.file}`)}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
@@ -40,7 +42,7 @@ function Resume() {
 				{backendSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../../assets/skill-icons/${skill.file}`).default}
+							src={require(`../../../assets/skill-icons/${skill.file}`)}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
@@ -53,5 +55,3 @@ function Resume() {
 }
 
 export default Resume;
-
-// having issue with this page rendering
