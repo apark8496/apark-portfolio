@@ -21,7 +21,7 @@ function Nav(props) {
                                 setCurrentDisplay(navLink);
                             }}
                             // active link is highlighted
-                            className={`${currentDisplay === navLink && 'active-link'} nav-link`}>
+                            className={`${currentDisplay === navLink && 'current-page'} nav-link`}>
                             {navLink}
                         </span>
                     </li>

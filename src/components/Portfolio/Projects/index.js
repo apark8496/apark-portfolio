@@ -10,7 +10,7 @@ function Projects() {
             imagePath: "skittydex"
         },
         {
-            title: "Budget Tracker - PWA",
+            title: "Budget Tracker",
             deployedUrl: "https://tranquil-sea-41492.herokuapp.com/",
             ghRepoUrl: "https://github.com/apark8496/budget-tracker",
             imagePath: "budget-tracker"
@@ -41,12 +41,12 @@ function Projects() {
                         </div>
                         <div className="card-title">
                             <h3 className="project-title">{project.title}</h3>
-                            <p className="project-links">
+                            <p>
                                 <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-                                    <img className="project-link-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
+                                    <img className="project-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
                                 </a>
                                 <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-                                    <img className="project-link-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
+                                    <img className="project-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
                                 </a>
                             </p>
                         </div>

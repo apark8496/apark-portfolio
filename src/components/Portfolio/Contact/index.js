@@ -61,19 +61,20 @@ function Contact () {
 
     return (
         <div>
-            <h2>Contact Me</h2>
+            <h2>Lets Work Together!</h2>
+            {/* add a section talking about contributing/etc */}
             <form id="contact-form" ref={form} onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange}></input>
+                    <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange} placeholder="Name"></input>
                 </div>
                 <div>
                     <label htmlFor="email">Email Address:</label>
-                    <input type="email" id="email" name="email" defaultValue={email} onBlur={handleChange}></input>
+                    <input type="email" id="email" name="email" defaultValue={email} onBlur={handleChange} placeholder="Email"></input>
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
+                    <textarea id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange} placeholder="Message"></textarea>
                 </div>
                 <button className="submit-btn" type="submit">Send Message!</button>
                 {errorMessage && (
