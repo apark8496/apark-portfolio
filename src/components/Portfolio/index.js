@@ -10,11 +10,11 @@ function Portfolio(props) {
     const { currentDisplay } = props;
 
     // conditionally render each section of portfolio
-    if (currentDisplay === 'About Me') {
+    if (currentDisplay === 'About') {
         return <main><About></About></main>
-    } else if (currentDisplay === 'My Projects') {
+    } else if (currentDisplay === 'Projects') {
         return <main><Projects></Projects></main>
-    } else if (currentDisplay === 'Contact Me') {
+    } else if (currentDisplay === 'Contact') {
         return <main><Contact></Contact></main>
     } else {
         return <main><Resume></Resume></main>

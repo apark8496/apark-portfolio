@@ -5,7 +5,7 @@ function Resume() {
 	// list known skills on resume page
 	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
 	const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
-// provide resume
+	// provide resume
 	return (
 		<section className='resume-section'>
 			<div>
@@ -16,20 +16,18 @@ function Resume() {
 				<a
 					className='resume-link'
 					href='https://docs.google.com/document/d/1BwiwBcrQ3dPY-qjf6rTSdzvwtokWaQ6S1bW1D_3AQSg/edit?usp=sharing'
-					target='_blank'
-					rel='noopener noreferrer'
 				>
 					here.
 				</a>
 			</p>
 
-            {/* skills */}
+			{/* skills */}
 			<h3 className='heading'>Front-End Skills</h3>
 			<div className='icon-list'>
 				{frontendSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../skill-icons${skill.file}`).default}
+							src={require(`../../../assets/skill-icons/${skill.file}`).svg}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
@@ -42,7 +40,7 @@ function Resume() {
 				{backendSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../skill-icons${skill.file}`).default}
+							src={require(`../../../assets/skill-icons/${skill.file}`).default}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
@@ -55,3 +53,5 @@ function Resume() {
 }
 
 export default Resume;
+
+// having issue with this page rendering

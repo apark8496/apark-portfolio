@@ -30,6 +30,7 @@ function Projects() {
 
     ])
     return (
+        // Project cards
         <div>
             <h2>My Projects</h2>
             <div className="projects">

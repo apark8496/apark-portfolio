@@ -1,21 +1,21 @@
-
 import React, {useState} from 'react';
+// Portfolio components 
 import Header from './components/Header';
-import Main from './components/Main';
+import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
 
 function App() {
   // arr of nav links
   const [navLinks] = useState([
-    "About Me", 
-    "My Projects",
-    "Contact Me", 
-    "My Resume"
+    "About", 
+    "Projects",
+    "Contact", 
+    "Resume"
   ]);
 
   // set current display based on nav link selection
   const [currentDisplay, setCurrentDisplay] = useState(navLinks[0]);
-
+  const [contactSelected, setContactSelected] = useState(false);
   return (
     <div>
         {/* passing nav links and current display settings on to header as props */}
@@ -23,12 +23,14 @@ function App() {
           navLinks={navLinks}
           currentDisplay={currentDisplay}
           setCurrentDisplay={setCurrentDisplay}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
         ></Header>
 
         {/* passing current display settings on to main section as props */}
-        <Main
+        <Portfolio
           currentDisplay={currentDisplay}
-        ></Main>
+        ></Portfolio>
 
         <Footer></Footer>
     </div>

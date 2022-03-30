@@ -51,7 +51,7 @@ export const SKILLS = [
 	},
 	{
 		name: 'Mongoose',
-		file: 'mongoose.png',
+		file: 'mongoose.svg',
 		type: 'back-end',
 	},
 	{
@@ -73,5 +73,5 @@ export const SKILLS = [
 		name: 'Git',
 		file: 'git-icon.svg',
 		type: 'other',
-	}
+	},
 ];

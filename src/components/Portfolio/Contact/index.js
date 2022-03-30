@@ -1,7 +1,6 @@
-
 import React, { useState, useRef } from "react";
 import validateEmail from "../../../utils/helpers";
-import emailjs from "@emailjs/browser";
+import emailjs from '@emailjs/browser';
 
 function Contact () {
 
@@ -18,7 +17,7 @@ function Contact () {
     // use emailjs to send email
     const sendEmail = () => {
         // TODO use .env to hide ids?
-        emailjs.sendForm('service_d26dc06', 'template_6z4wf8u', form.current, 'ltpzhMJUSQ39yAQTh')
+        emailjs.sendForm('service_5q8rlvc', 'template_4v2g57p', form.current, 'ltpzhMJUSQ39yAQTh')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
