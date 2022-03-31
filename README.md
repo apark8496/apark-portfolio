@@ -1,5 +1,5 @@
 # Ashley Park
-<a href="https://https://apark8496.github.io/apark-portfolio/">![Deployed App](https://img.shields.io/badge/My%20Portfolio-teal.svg?style=for-the-badge)</a>
+<a href="https://apark8496.github.io/apark-portfolio/">![Deployed App](https://img.shields.io/badge/My%20Portfolio-teal.svg?style=for-the-badge)</a>
 
 
 ## About Me 💻
