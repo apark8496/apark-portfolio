@@ -18,11 +18,11 @@ html {
 body {
   margin: 0 0 100px;
   display: flex;
-  /* background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+  background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
     radial-gradient(91% 146%,
       rgba(255, 255, 255, 0.5) 47%,
       rgba(0, 0, 0, 0.5) 100%);
-  background-blend-mode: screen; */
+  background-blend-mode: screen;
 }
 
 a {
@@ -86,7 +86,7 @@ h3 {
 
 .bio {
   text-align: left;
-  background-color: var(--sage);
+  background-color: var(--lavender);
   max-width: 50%;
   border-radius: 10px;
   padding: 3% 6%;
@@ -97,6 +97,7 @@ h3 {
   font-weight: 400;
   font-size: 1.3em;
   cursor: pointer;
+  border: var(--sage) 1px solid;
 }
 
 .my-pic {
@@ -268,6 +269,7 @@ h3 {
   border-radius: 5px;
   padding: 2% 5% 5% 5%;
   opacity: 75%;
+  border: var(--sage) 1px solid;
 }
 
 .skill-div {
