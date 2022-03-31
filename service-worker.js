@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/apark-portfolio/precache-manifest.9bab979984049f5f489829e66febb3cc.js"
+  "/apark-portfolio/precache-manifest.788122a4acb8762dc5b4ac3d3cf2d44b.js"
 );
 
 workbox.clientsClaim();

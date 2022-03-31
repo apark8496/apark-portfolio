@@ -1,7 +1,7 @@
 {
-  "main.css": "/apark-portfolio/static/css/main.8a8aacfd.chunk.css",
-  "main.js": "/apark-portfolio/static/js/main.dbb3f446.chunk.js",
-  "main.js.map": "/apark-portfolio/static/js/main.dbb3f446.chunk.js.map",
+  "main.css": "/apark-portfolio/static/css/main.73c4bd9d.chunk.css",
+  "main.js": "/apark-portfolio/static/js/main.75554406.chunk.js",
+  "main.js.map": "/apark-portfolio/static/js/main.75554406.chunk.js.map",
   "static/js/1.6d901b3e.chunk.js": "/apark-portfolio/static/js/1.6d901b3e.chunk.js",
   "static/js/1.6d901b3e.chunk.js.map": "/apark-portfolio/static/js/1.6d901b3e.chunk.js.map",
   "static/js/2.1a4079d4.chunk.js": "/apark-portfolio/static/js/2.1a4079d4.chunk.js",
@@ -30,8 +30,8 @@
   "static/media/nodejs.svg": "/apark-portfolio/static/media/nodejs.94cafb0d.svg",
   "static/media/react.svg": "/apark-portfolio/static/media/react.19507af8.svg",
   "static/media/sequelize.svg": "/apark-portfolio/static/media/sequelize.fc2fea2d.svg",
-  "static/css/main.8a8aacfd.chunk.css.map": "/apark-portfolio/static/css/main.8a8aacfd.chunk.css.map",
+  "static/css/main.73c4bd9d.chunk.css.map": "/apark-portfolio/static/css/main.73c4bd9d.chunk.css.map",
   "index.html": "/apark-portfolio/index.html",
-  "precache-manifest.9bab979984049f5f489829e66febb3cc.js": "/apark-portfolio/precache-manifest.9bab979984049f5f489829e66febb3cc.js",
+  "precache-manifest.788122a4acb8762dc5b4ac3d3cf2d44b.js": "/apark-portfolio/precache-manifest.788122a4acb8762dc5b4ac3d3cf2d44b.js",
   "service-worker.js": "/apark-portfolio/service-worker.js"
 }
