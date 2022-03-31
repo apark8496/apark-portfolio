@@ -6,9 +6,6 @@ function Footer() {
 	return (
 		<footer className='footer'>
 			<Icon links={LINKS}></Icon>
-			<div>
-				<p>© 2022 Ashley Park</p>
-			</div>
 		</footer>
 	);
 }

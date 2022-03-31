@@ -30,17 +30,17 @@ function Projects() {
 
     ])
     return (
-        // Project cards
+        // Project cards show last three and make hover detail effect on img
         <div>
             <h2>My Projects</h2>
             <div className="projects">
                 {featuredProjects.map((project) => (
                     <div className="project-card" key={project.title}>
-                        <div className="card-img">
-                            <img className="project-img" src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title}></img>
-                        </div>
                         <div className="card-title">
                             <h3 className="project-title">{project.title}</h3>
+                            <div className="card-img">
+                                <img className="project-img" src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title}></img>
+                            </div>
                             <p>
                                 <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
                                     <img className="project-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />

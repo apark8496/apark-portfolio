@@ -19,11 +19,9 @@ body {
   margin: 0 0 100px;
   display: flex;
   background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
+    radial-gradient(91% 146%,
       rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
+      rgba(0, 0, 0, 0.5) 100%);
   background-blend-mode: screen;
 }
 
@@ -109,42 +107,68 @@ h3 {
 }
 
 /* projects */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px 45px;
+}
+
 .project-card {
-  border-bottom: var(--sage) solid 1px;
-  margin-bottom: 50px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 3px;
+  background-color: var(--lavender);
+  padding: 5px 5px 10px 5px;
+  box-shadow: 2px 2px 5px var(--sage, 0.5);
   border-radius: 20px;
 }
 
+.project-card:hover {
+  box-shadow: 5px 5px 15px var(--lavender, 0.5);
+}
+
 .project-img {
-  align-self: auto;
-  width: 450px;
-  height: 550px;
-  border-radius: 3px;
+  align-self: center;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
   margin-bottom: 10px;
   border: var(--sage) 1px solid;
 }
 
 .card-title {
+  color: #f5f5f5;
   display: flex;
   align-items: center;
-  /* width: 100%; */
+  margin: 10px 10px;
 }
 
 .project-title {
-  margin: 5px;
-  width: 65%;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  margin: 10px 10px;
 }
 
 .project-link {
-    width: 25%;
+  width: 25%;
 }
 
-.project-link,
-.project-icon{
-  /* height: 50%;
-  width: 50%;   */
-  padding: 5px;
+.project-link {
+  margin: 5px 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 10px;
 }
+
+/* .project-icon {
+
+} */
+
 .project-icon:hover {
   box-shadow: 0px 0px 3px var(--sage);
 }
@@ -161,8 +185,8 @@ h3 {
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 0px 3px var(--sage);
-
 }
+
 #contact-form div {
   display: flex;
   flex-direction: column;
@@ -210,6 +234,7 @@ h3 {
   from {
     color: var(--sage);
   }
+
   to {
     color: var(--lavender);
   }
@@ -268,25 +293,23 @@ h3 {
 
 /* footer */
 .footer {
-  width: 90%;
-  padding: 15px 10px;
   position: absolute;
+  left: 0;
   bottom: 0;
-  color: var(--lavender);
+  width: 100%;
+  text-align: center;
 }
 
 .footer span {
-  padding: 10px 20%;
-  border-radius: 10%;
+  justify-content: space-around;
+  padding: 25px;
 }
-
 .icon-link {
   text-decoration: none;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .icon-link:hover {
-  /* font-size: 65px; */
   color: var(--lavender);
 }
 
@@ -295,6 +318,7 @@ h3 {
   .nav-link {
     font-size: 20px;
   }
+
   .my-pic {
     width: 60%;
     margin-bottom: 5%;
@@ -330,7 +354,7 @@ h3 {
     width: 18%;
   }
 
-  .project-icon{
+  .project-icon {
     height: 25px;
   }
 
@@ -344,28 +368,36 @@ h3 {
     width: 90%;
     margin: auto;
   }
+
   .my-pic {
     width: 40%;
   }
+
   .project-title {
     font-size: 24px;
   }
-  .project-icon{
+
+  .project-icon {
     height: 32px;
   }
+
   #contact-form {
     width: 80%;
     margin: auto;
   }
+
   .proficiencies {
     flex-direction: row;
   }
+
   .proficiencies div {
     padding: 0 10px;
   }
+
   .proficiencies div h3 {
     text-align: center;
   }
+
   footer p {
     font-size: 18px;
   }
@@ -375,6 +407,7 @@ h3 {
   main {
     width: 95%;
   }
+
   header {
     display: flex;
     width: 100%;
@@ -382,6 +415,7 @@ h3 {
     align-items: center;
     align-content: space-between;
   }
+
   h1 {
     display: inline;
     font-size: 26px;
@@ -389,68 +423,80 @@ h3 {
     width: 40%;
     text-align: left;
   }
+
   nav {
     margin: auto;
     width: 60%;
     padding-bottom: 0;
   }
+
   .nav-links {
     padding-bottom: 0;
   }
+
   .nav-item {
     padding-top: 10px;
   }
+
   .bio-container {
     flex-direction: row;
   }
+
   .my-pic {
     width: 30%;
     padding: 10px;
   }
+
   .bio {
     width: 70%;
     padding: 0 30px 0 30px;
     margin: auto;
   }
+
   .projects {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     margin-bottom: 50px;
   }
+
   .project-card {
     width: 45%;
     margin: auto;
     border-bottom: none;
   }
+
   .project-title {
     width: 70%;
   }
+
   .project-links {
     width: 30%;
   }
+
   #contact-form {
     width: 60%;
   }
-  .proficiencies {
-    width: 70%;
-    margin: auto;
-  }
+
+
   footer {
     width: 100%;
     flex-direction: row;
   }
+
   footer p {
     width: 25%;
     margin-left: 50px;
     font-size: 20px;
     order: 1;
   }
+
   .footer-links {
     width: 75%;
     margin: 0 100px;
     order: 2;
   }
+
   .footer-link {
     margin: auto;
   }
