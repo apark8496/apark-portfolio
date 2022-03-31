@@ -1,7 +1,7 @@
 # Ashley Park
 <a href="https://apark8496.github.io/apark-portfolio/">![Deployed App](https://img.shields.io/badge/My%20Portfolio-teal.svg?style=for-the-badge)</a>
 
-![Portfolio]()
+![Portfolio](https://github.com/apark8496/apark-portfolio/blob/0dc8fe8e1e8459c7571e14e128930c1a7059b634/public/assets/About.png)
 ## About Me 💻
 
 I'm a web developer from North Carolina, and currently live with my husband and two cats 🐈.
