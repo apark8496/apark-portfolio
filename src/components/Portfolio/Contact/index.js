@@ -17,7 +17,7 @@ function Contact () {
     // use emailjs to send email
     const sendEmail = () => {
         // TODO use .env to hide ids?
-        emailjs.sendForm('service_5q8rlvc', 'template_4v2g57p', form.current, 'ltpzhMJUSQ39yAQTh')
+        emailjs.sendForm('service_5q8rlvc', 'template_4v2g57p', form.current)
         .then((result) => {
             console.log(result.text);
         }, (error) => {
