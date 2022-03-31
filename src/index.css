@@ -302,7 +302,7 @@ h3 {
 
 .footer span {
   justify-content: space-around;
-  padding: 25px;
+	padding: 10px 5%;
 }
 .icon-link {
   text-decoration: none;
@@ -345,22 +345,23 @@ h3 {
     margin-bottom: 5%;
   }
 
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .project-title {
     font-size: 20px;
-    width: 82%;
+    width: 60%;
   }
 
   .project-links {
-    width: 18%;
+    width: 10%;
   }
 
   .project-icon {
-    height: 25px;
+    height: 20px;
   }
 
-  footer p {
-    font-size: 15px;
-  }
 }
 
 @media screen and (min-width: 750px) {
@@ -384,18 +385,6 @@ h3 {
   #contact-form {
     width: 80%;
     margin: auto;
-  }
-
-  .proficiencies {
-    flex-direction: row;
-  }
-
-  .proficiencies div {
-    padding: 0 10px;
-  }
-
-  .proficiencies div h3 {
-    text-align: center;
   }
 
   footer p {
@@ -470,7 +459,7 @@ h3 {
     width: 70%;
   }
 
-  .project-links {
+  .project-link {
     width: 30%;
   }
 
@@ -478,26 +467,9 @@ h3 {
     width: 60%;
   }
 
-
   footer {
     width: 100%;
     flex-direction: row;
   }
 
-  footer p {
-    width: 25%;
-    margin-left: 50px;
-    font-size: 20px;
-    order: 1;
-  }
-
-  .footer-links {
-    width: 75%;
-    margin: 0 100px;
-    order: 2;
-  }
-
-  .footer-link {
-    margin: auto;
-  }
 }
