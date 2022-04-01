@@ -63,7 +63,7 @@ function Contact () {
         <div>
             <h2>Lets Work Together!</h2>
             {/* add a section talking about contributing/etc */}
-            <form id="contact-form" ref={form} onSubmit={handleSubmit}>
+            <form id="contact-section" ref={form} onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange} placeholder="Name"></input>
