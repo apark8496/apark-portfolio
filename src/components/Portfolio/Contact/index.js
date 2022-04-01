@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react";
 import validateEmail from "../../../utils/helpers";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
-function Contact () {
+function Contact() {
 
     // set values for form input fields
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
-    
+
     // set error messages
     const [errorMessage, setErrorMessage] = useState('');
 
@@ -16,15 +16,14 @@ function Contact () {
 
     // use emailjs to send email
     const sendEmail = () => {
-        // TODO use .env to hide ids?
-        emailjs.sendForm('service_5q8rlvc', 'template_4v2g57p', form.current)
+        emailjs.sendForm('service_5q8rlvc', 'template_4v2g57p', form.current, 'jRqq918ooN6c-C4Xm')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
             console.log(error.text);
         });
-    }
-    
+    };
+
     // if no errors, upon submit, log value of input fields
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -66,17 +65,17 @@ function Contact () {
             <form id="contact-section" ref={form} onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
-                    <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange} placeholder="Name"></input>
+                    <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange}></input>
                 </div>
                 <div>
                     <label htmlFor="email">Email Address:</label>
-                    <input type="email" id="email" name="email" defaultValue={email} onBlur={handleChange} placeholder="Email"></input>
+                    <input type="email" id="email" name="email" defaultValue={email} onBlur={handleChange}></input>
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange} placeholder="Message"></textarea>
+                    <textarea id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
-                <button className="submit-btn" type="submit">Send Message!</button>
+                <button className="submit-btn" type="submit" onClick={() => alert('Thank you for sending a message!')}>Send Message!</button>
                 {errorMessage && (
                     <div className="error-msg">
                         <p>{errorMessage}</p>
