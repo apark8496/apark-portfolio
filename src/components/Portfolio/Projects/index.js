@@ -4,6 +4,12 @@ import React, { useState } from "react";
 function Projects() {
     const [featuredProjects] = useState([
         {
+            title: "Breaking Code: Memory Game",
+            deployedUrl: "https://github.com/barrantesc/BreakingCode",
+            ghRepoUrl: "https://github.com/barrantesc/BreakingCode",
+            imagePath: "breaking-code"
+        },
+        {
             title: "Skittydex Pokemon Team Builder & Blog",
             deployedUrl: "https://skittydex.herokuapp.com",
             ghRepoUrl: "https://github.com/apark8496/SkittyDex",
