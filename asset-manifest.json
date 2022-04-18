@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/apark-portfolio/static/css/main.a03a8f30.css",
-    "main.js": "/apark-portfolio/static/js/main.69cadc6d.js",
+    "main.js": "/apark-portfolio/static/js/main.8998efd8.js",
     "static/js/787.4048b011.chunk.js": "/apark-portfolio/static/js/787.4048b011.chunk.js",
     "static/media/budget-tracker.png": "/apark-portfolio/static/media/budget-tracker.2f6cfa4cbeda5b1a5261.png",
     "static/media/book-hangover.png": "/apark-portfolio/static/media/book-hangover.8c8933cb31fb8ed7c0a7.png",
@@ -28,11 +28,11 @@
     "static/media/graphql.svg": "/apark-portfolio/static/media/graphql.7540fa74168b719e0c29.svg",
     "static/media/bulma.svg": "/apark-portfolio/static/media/bulma.ecefb4da633f2f1f370e.svg",
     "main.a03a8f30.css.map": "/apark-portfolio/static/css/main.a03a8f30.css.map",
-    "main.69cadc6d.js.map": "/apark-portfolio/static/js/main.69cadc6d.js.map",
+    "main.8998efd8.js.map": "/apark-portfolio/static/js/main.8998efd8.js.map",
     "787.4048b011.chunk.js.map": "/apark-portfolio/static/js/787.4048b011.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a03a8f30.css",
-    "static/js/main.69cadc6d.js"
+    "static/js/main.8998efd8.js"
   ]
 }
