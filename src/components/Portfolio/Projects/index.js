@@ -5,7 +5,7 @@ function Projects() {
     const [featuredProjects] = useState([
         {
             title: "Breaking Code: Memory Game",
-            deployedUrl: "https://github.com/barrantesc/BreakingCode",
+            deployedUrl: "https://fathomless-retreat-80150.herokuapp.com/",
             ghRepoUrl: "https://github.com/barrantesc/BreakingCode",
             imagePath: "breaking-code"
         },
