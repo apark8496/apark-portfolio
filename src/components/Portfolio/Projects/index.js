@@ -17,7 +17,7 @@ function Projects() {
         },
         {
             title: "Budget Tracker",
-            deployedUrl: "https://tranquil-sea-41492.herokuapp.com/",
+            deployedUrl: "https://personal-budget-pwa.herokuapp.com/",
             ghRepoUrl: "https://github.com/apark8496/budget-tracker",
             imagePath: "budget-tracker"
         },
