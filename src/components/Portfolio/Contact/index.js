@@ -88,6 +88,8 @@ function Contact() {
                 </button>
             </form>
         </div>
+
+        // add in social media contacts column
     )
 }
 

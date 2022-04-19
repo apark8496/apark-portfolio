@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Card from 'react-bootstrap/Card';
 
+
 function Projects() {
     const [featuredProjects] = useState([
         {
@@ -37,52 +38,23 @@ function Projects() {
 
     ])
     return (
-        // Project cards show last three and make hover detail effect on img
-        //         <div>
-        //             <h2>My Projects</h2>
-        //             <div className="projects">
-        //                 {featuredProjects.map((project) => (
-        //                     <div className="project-card" key={project.title}>
-        //                         <div className="card-title">
-        //                             <h3 className="project-title">{project.title}</h3>
-        //                             <div className="card-img">
-        //                                 <img className="project-img" src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title}></img>
-        //                             </div>
-        //                             <p>
-        //                                 <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-        //                                     <img className="project-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
-        //                                 </a>
-        //                                 <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-        //                                     <img className="project-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
-        //                                 </a>
-        //                             </p>
-        //                         </div>
-        //                     </div>
-        //                 ))}
-        //             </div>
-        //         </div>
-        //     )
-        // };
-
         <div>
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
-                <Card className="card" style={{ width: '30rem' }} key={project.title}>
-                    <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title}>
-                        {/* <img src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title}></img> */}
-                    </Card.Img>
-                    <Card.Body className="card-info">
-                        <Card.Title className="text-title">{project.title}</Card.Title>
-                        <Card.Link className="text-body">
-                            <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-                                <img className="project-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
-                            </a>
-                            <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-                                <img className="project-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
-                            </a>
-                        </Card.Link>
-                    </Card.Body>
-                </Card>
+                    <Card className="card" style={{ width: '30rem', display: 'flex', flexDirection: 'row' }}key={project.title}>
+                        <Card.Img className="card-img" style={{ width: '30rem', flex: 2 }} src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                        <Card.Body className="card-info">
+                            <Card.Title className="text-title">{project.title}</Card.Title>
+                            <Card.Link className="text-body">
+                                <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
+                                    <img className="project-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
+                                </a>
+                                <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
+                                    <img className="project-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
+                                </a>
+                            </Card.Link>
+                        </Card.Body>
+                    </Card>
             ))}
         </div>
     )
