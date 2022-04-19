@@ -86,7 +86,6 @@ function Contact() {
                     <span></span>
                     <span></span> Send Message!
                 </button>
-        
             </form>
         </div>
     )

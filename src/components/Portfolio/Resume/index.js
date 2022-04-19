@@ -1,5 +1,6 @@
 import React from 'react';
 import { SKILLS } from '../../../utils/skills.js';
+// import { Document } from 'react-pdf'
 // import pdf from "../../documents/apark-resume.pdf";
 
 
@@ -19,11 +20,18 @@ function Resume() {
 				View or download my full resume
 				<a
 					className='resume-link'
-					href='https://docs.google.com/document/d/1BwiwBcrQ3dPY-qjf6rTSdzvwtokWaQ6S1bW1D_3AQSg/edit?usp=sharing'
+					href='https://drive.google.com/file/d/1oNBfJwSB2rehwvO9XQ64tfgvXmAxgihI/view?usp=sharing'
+					target="_blank"
+					rel="noreferrer"
 				>
 					here.
 				</a>
 			</p>
+			{/* <div className='resume-pdf'>
+				<Document
+					file="https://drive.google.com/file/d/1oNBfJwSB2rehwvO9XQ64tfgvXmAxgihI/view?usp=sharing">
+				</Document>
+			</div> */}
 
 			{/* skills */}
 			<h3 className='heading'>Front-End Skills</h3>
