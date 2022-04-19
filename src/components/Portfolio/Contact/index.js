@@ -17,17 +17,17 @@ function Contact() {
     // use emailjs to send email
     const sendEmail = () => {
         emailjs.sendForm('service_5q8rlvc', 'template_4v2g57p', form.current, 'jRqq918ooN6c-C4Xm')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     };
 
     // if no errors, upon submit, log value of input fields
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(!errorMessage) {
+        if (!errorMessage) {
             console.log(formState);
         }
         sendEmail(e);
@@ -36,14 +36,14 @@ function Contact() {
     // validate input fields and send error messages if not valid
     const handleChange = (e) => {
         // if email is not valid, send error message
-        if(e.target.name === 'email') {
+        if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             if (!isValid) {
                 setErrorMessage('**Please enter a valid e-mail address.');
             } else {
                 setErrorMessage('');
             }
-        // if name or message are not entered, send error message
+            // if name or message are not entered, send error message
         } else {
             if (!e.target.value.length) {
                 setErrorMessage(`**Please enter a ${e.target.name}.`);
@@ -53,7 +53,7 @@ function Contact() {
         };
         // if there are no error messages, set form input values
         if (!errorMessage) {
-            setFormState({ ...formState, [e.target.name]: e.target.value});
+            setFormState({ ...formState, [e.target.name]: e.target.value });
 
         }
     };
@@ -75,12 +75,18 @@ function Contact() {
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
-                <button className="submit-btn" type="submit" onClick={() => alert('Thank you for sending a message!')}>Send Message!</button>
                 {errorMessage && (
                     <div className="error-msg">
                         <p>{errorMessage}</p>
                     </div>
                 )}
+                <button className="submit-btn" type="submit" onClick={() => alert('Thank you for sending a message!')}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Send Message!
+                </button>
+        
             </form>
         </div>
     )

@@ -45,13 +45,13 @@ function About() {
                     I'm a web developer from North Carolina, and currently live with my husband and two cats. <br />
                     Apart from coding, you can find me spending my time doing all things nerdy! Such as reading, <br />
                     playing Magic the Gathering, as well as D&D and playing video games! <br />
-                    I am currently earning a Full Stack Web Development <br />
-                    Certificate from the University of North Carolina at Charlotte's Coding Bootcamp.
+                    I have a certificate in Full Stack Web Development <br />
+                     from the University of North Carolina at Charlotte's Coding Bootcamp.
                     <br />
                     <br />
-                    I have created multiple projects using front-end technology <br />
+                    I have created multiple projects using front-end technologies <br />
                     such as JavaScript, React, HTML, and CSS as well as back-end <br />
-                    tools like Node.js, Express.js, MongoDB, GraphQL and MySQL <br />
+                    tools such as Node.js, Express.js, MongoDB, GraphQL and MySQL <br />
                     while following to development methods such as <br />
                     RESTful APIs, MVC structure and Single Page
                     Applications (SPAs).
