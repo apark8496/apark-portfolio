@@ -19,7 +19,7 @@ function Resume() {
 				View or download my full resume
 				<a
 					className='resume-link'
-					href='https://docs.google.com/document/d/1BwiwBcrQ3dPY-qjf6rTSdzvwtokWaQ6S1bW1D_3AQSg/edit?usp=sharing'
+					href='https://docs.google.com/document/d/1rg81NgjSfpK3jqAOJh4slO0DzSLXiLD5SseVYiI0kLE/edit?usp=sharing'
 				>
 					here.
 				</a>
