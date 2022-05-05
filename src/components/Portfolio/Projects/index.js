@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+
 
 
 function Projects() {
@@ -41,8 +44,9 @@ function Projects() {
         <div>
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
-                    <Card className="card" style={{ width: '30rem', display: 'flex', flexDirection: 'row' }}key={project.title}>
-                        <Card.Img className="card-img" style={{ width: '30rem', flex: 2 }} src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                <Row className="cards" style={{display:"flex", flexDirection:"row"}}>
+                    <Card className="card" style={{ width: '30rem'}} key={project.title}>
+                        <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                         <Card.Body className="card-info">
                             <Card.Title className="text-title">{project.title}</Card.Title>
                             <Card.Link className="text-body">
@@ -55,6 +59,7 @@ function Projects() {
                             </Card.Link>
                         </Card.Body>
                     </Card>
+                </Row>
             ))}
         </div>
     )

@@ -137,12 +137,16 @@ h3 {
 
 /* projects */
 /* make project card hover to show more info effect */
+.cards {
+  display: grid;
+
+}
 .card {
   width: 190px;
   height: 254px;
   border-radius: 1em;
   padding: 1.5rem;
-  background: var(--languid-lavender);
+  /* background: var(--languid-lavender); */
   border-radius: 15px;
   -webkit-transition: 0.4s ease-out;
   transition: 0.4s ease-out;
@@ -159,14 +163,14 @@ h3 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  z-index: 2;
+  /* z-index: 2; */
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .card-info {
-  position: relative;
+  /* position: relative; */
   z-index: 3;
   color: #f5f5f5;
   opacity: 0;
@@ -181,14 +185,8 @@ h3 {
 .text-title {
   font-size: 1.7rem;
   font-weight: 600;
+  text-align: center;
 }
-
-.text-body {
-  letter-spacing: 1px;
-  font-size: 0.9rem;
-  margin: 5px 0 15px 0;
-}
-
 
 /*Image*/
 .card-img {
@@ -218,8 +216,42 @@ h3 {
   transform: translateY(0);
 }
 
-
 /* contact */
+.email {
+  display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 1.3rem;
+	margin: 0 15% 0 15%;
+	background-color: var(--languid-lavender);
+	border-radius: 10px;
+	transition: background-color 0.25s ease-in-out;
+}
+
+.email a { 
+  color: var(--sage);
+	transition: color 0.25s ease-in-out;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.email:hover {
+	color: whitesmoke;
+}
+
+.email:hover {
+	background-color: var(--manatee);
+}
+.copy-msg {
+  display: flex;
+	justify-content: center;
+	align-items: center;
+  font-size: 1.2rem;
+  color: var(--sage);
+	font-weight: bold;
+}
+
 #contact-section {
   display: flex;
   justify-content: space-around;
@@ -447,7 +479,7 @@ button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-chi
 .icon-link {
   text-decoration: none;
   font-size: 40px;
-  color: var(--pale-pink);
+  color: var(--sage);
 }
 
 .icon-link:hover {
