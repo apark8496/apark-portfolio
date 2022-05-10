@@ -12,7 +12,8 @@ function Header (props) {
 
     return (
         <header>
-            <a href='/'><img src="https://i.imgur.com/jkdCcPg.png" border="0"/></a>
+            <h1 className="AP-logo">Ashley Park</h1>
+            {/* <a href='/'><img className='AP-logo' src="https://i.imgur.com/jkdCcPg.png" border="0"/></a> */}
 
             {/* passing nav links and current display settings on to header as props */}
             <Nav

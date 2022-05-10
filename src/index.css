@@ -53,12 +53,15 @@ body {
 }
 
 /* header */
-h1 {
+
+.AP-logo {
   text-align: center;
   color: var(--sage);
   text-decoration: wavy underline var(--pale-pink);
   font-size: 2rem;
+
 }
+
 
 .nav-links {
   list-style: none;
@@ -142,7 +145,6 @@ h3 {
   flex-wrap: wrap;
   gap: 1em;
   padding: 10px;
-  align-items: space-around;
 }
 
 .card {
@@ -152,7 +154,7 @@ h3 {
   padding: 1.9rem;
   gap: 1em;
   /* background: #f5f5f5; */
-  /* position: relative; */
+  position: relative;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
 }
@@ -166,15 +168,15 @@ h3 {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  /* z-index: 2; */
+  z-index: 2;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .card-info {
   align-content: center;
-  /* z-index: 3; */
+  z-index: 3;
   color: #f5f5f5;
   opacity: 0;
   -webkit-transform: translateY(20%);
@@ -248,31 +250,32 @@ h3 {
 }
 
 .email button {
+  color: #f5f5f5;
   display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- padding: 1em;
- border: 0px solid transparent;
- border-radius: 1.25em;
- transition: all 0.2s linear;
- background-color: rgba(100,77,237,0.08);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 0px solid transparent;
+  border-radius: 1.25em;
+  transition: all 0.2s linear;
+  background-color: rgba(100, 77, 237, 0.08);
 }
 
 .email button:hover {
   box-shadow: 3.4px 2.5px 4.9px rgba(0, 0, 0, 0.025),
-   8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
-   17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
-   36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
-   99px 72px 143px rgba(0, 0, 0, 0.08);
- }
+    8.6px 6.3px 12.4px rgba(0, 0, 0, 0.035),
+    17.5px 12.8px 25.3px rgba(0, 0, 0, 0.045),
+    36.1px 26.3px 52.2px rgba(0, 0, 0, 0.055),
+    99px 72px 143px rgba(0, 0, 0, 0.08);
+}
 
- .copy {
+.copy {
   position: relative;
   display: inline-block;
- }
+}
 
- .copy .copyText {
+.copy .copyText {
   visibility: hidden;
   width: 4em;
   background-color: rgba(0, 0, 0, 0.253);
@@ -284,9 +287,9 @@ h3 {
   z-index: 1;
   top: 25%;
   left: 110%;
- }
- 
- .copy .copyText::after {
+}
+
+.copy .copyText::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -295,11 +298,11 @@ h3 {
   border-width: 5px;
   border-style: solid;
   border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
- }
- 
- .copy:hover .copyText {
+}
+
+.copy:hover .copyText {
   visibility: visible;
- }
+}
 
 .copy-msg {
   display: flex;
@@ -347,98 +350,25 @@ h3 {
 }
 
 /* Contact button */
-/* button {
-  position: relative;
-  padding: .8em 1.3em;
-  outline: none;
-  border: 1px solid var(--languid-lavender);
+.submit-btn {
+  padding: 1rem 2rem;
+  font-weight: 700;
   background: var(--sage);
-  color: #ffffff;
-  letter-spacing: 2px;
-  font-size: 15px;
-  overflow: hidden;
-  transition: 0.2s;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
+  color: #f5f5f5;
+  border-radius: .5rem;
+  border: 2px solid var(--dark-sage);
+  transition-duration: 1s;
+  transition-property: border-top,
+    border-left,
+    border-bottom,
+    border-right,
+    box-shadow;
 }
 
-button:hover {
-  box-shadow: 0 0 10px var(--pale-pink), 0 0 25px var(--dark-sage), 0 0 50px var(--pale-pink);
-  transition-delay: 0.6s;
+.submit-btn:hover {
+  border: 2px solid var(--manatee);
+  box-shadow: rgb(115, 120, 108, 0.4) 5px 5px, rgb(115, 120, 108, 0.3) 10px 10px, rgb(115, 120, 108, 0.2) 15px 15px;
 }
-
-button span {
-  position: absolute;
-}
-
-button span:nth-child(1) {
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--pale-pink));
-}
-
-button:hover span:nth-child(1) {
-  left: 100%;
-  transition: 0.7s;
-}
-
-button span:nth-child(3) {
-  bottom: 0;
-  right: -100%;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--dark-sage));
-}
-
-button:hover span:nth-child(3) {
-  right: 100%;
-  transition: 0.7s;
-  transition-delay: 0.35s;
-}
-
-button span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, var(--pale-pink));
-}
-
-button:hover span:nth-child(2) {
-  top: 100%;
-  transition: 0.7s;
-  transition-delay: 0.17s;
-}
-
-button span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, var(--dark-sage));
-}
-
-button:hover span:nth-child(4) {
-  bottom: 100%;
-  transition: 0.7s;
-  transition-delay: 0.52s;
-}
-
-button:active {
-  background: var(--dark-sage);
-  background: linear-gradient(to top right, var(--dark-sage), var(--sage));
-  color: #bfbfbf;
-  box-shadow: 0 0 8px var(--pale-pink), 0 0 8px var(--manatee), 0 0 8px var(--pale-pink);
-  transition: 0.1s;
-}
-
-button:active span:nth-child(1) span:nth-child(2) span:nth-child(2) span:nth-child(2) {
-  transition: none;
-  transition-delay: none;
-} */
 
 
 .error-msg p {
