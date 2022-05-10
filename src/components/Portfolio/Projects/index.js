@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -21,6 +21,12 @@ function Projects() {
             ghRepoUrl: "https://github.com/apark8496/SkittyDex"
         },
         {
+            imagePath: "book-hangover",
+            title: "The Book Hangover Cure",
+            deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
+            ghRepoUrl: "https://github.com/apark8496/The-Book-Hangover-Cure"
+        },
+        {
             imagePath: "budget-tracker",
             title: "Budget Tracker",
             deployedUrl: "https://personal-budget-pwa.herokuapp.com/",
@@ -33,18 +39,20 @@ function Projects() {
             ghRepoUrl: "https://github.com/apark8496/rainy-day-weather-app/"
         },
         {
-            imagePath: "book-hangover",
-            title: "The Book Hangover Cure",
-            deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
-            ghRepoUrl: "https://github.com/apark8496/The-Book-Hangover-Cure"
+            imagePath: "schedule",
+            title: "Work Day Scheduler",
+            deployedUrl: "https://apark8496.github.io/work-day-scheduler/",
+            ghRepoUrl: "https://github.com/apark8496/work-day-scheduler/"
         },
+        
 
     ])
     return (
         <div>
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
-                <Row className="cards" style={{display:"flex", flexDirection:"row"}}>
+                <Row className="cards">
+                    <Col>
                     <Card className="card" style={{ width: '30rem'}} key={project.title}>
                         <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                         <Card.Body className="card-info">
@@ -59,6 +67,7 @@ function Projects() {
                             </Card.Link>
                         </Card.Body>
                     </Card>
+                    </Col>
                 </Row>
             ))}
         </div>

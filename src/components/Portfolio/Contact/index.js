@@ -94,8 +94,9 @@ function Contact() {
                     <a id='email' href='mailto:apark8496@gmail.com'>
                         apark8496@gmail.com
                     </a>
-                    <button>
+                    <button className="copy">
                         <FontAwesomeIcon onClick={copyEmail} icon={faCopy} />
+                        <span className="copyText">Copy</span>
                     </button>
                 </div>
                 {emailCopied && (
