@@ -199,8 +199,8 @@ p {
 
 /*Image*/
 .card-img {
-  width: 350px;
-  height: 250px;
+  width: 400px;
+  height: 300px;
   position: absolute;
   border-radius: 15px;
   top: 0;
