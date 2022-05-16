@@ -8,6 +8,13 @@ import Col from 'react-bootstrap/Col';
 function Projects() {
     const [featuredProjects] = useState([
         {
+            imagePath: "current",
+            title: "Cat Tails: Adventure Text RPG",
+            deployedUrl: "https://github.com/apark8496/cat-tails",
+            ghRepoUrl: "https://github.com/apark8496/cat-tails",
+            description: "Current Project under development!"
+        },
+        {
             imagePath: "breaking-code",
             title: "Breaking Code: Memory Game",
             deployedUrl: "https://fathomless-retreat-80150.herokuapp.com/",

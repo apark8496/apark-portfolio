@@ -150,8 +150,8 @@ p {
 }
 
 .card {
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   border-radius: 1em;
   padding: 1.9rem;
   gap: 1em;
@@ -199,8 +199,8 @@ p {
 
 /*Image*/
 .card-img {
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  height: 350px;
   position: absolute;
   border-radius: 15px;
   top: 0;
@@ -489,12 +489,14 @@ p {
     margin-bottom: 5%;
   } */
 
+
   .bio p {
     font-size: 20px;
   }
 
   .card {
     grid-template-columns: repeat(1, 1fr);
+    width: 80%;
   }
 
 }
