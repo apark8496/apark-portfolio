@@ -72,10 +72,10 @@ function Projects() {
                                 <Card.Text className="card-description">{project.description}</Card.Text>
                                 <Card.Link className="text-body">
                                     <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-                                        <img className="project-icon" src={require("../../../assets/icons/github-site.png")} alt="GitHub icon" />
+                                        <img className="project-icon" src={require("../../../assets/icons/github.png")} alt="GitHub icon" />
                                     </a>
                                     <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-                                        <img className="project-icon" src={require("../../../assets/icons/site-link.png")} alt="Website icon" />
+                                        <img className="project-icon" src={require("../../../assets/icons/site.png")} alt="Website icon" />
                                     </a>
                                 </Card.Link>
                             </Card.Body>
