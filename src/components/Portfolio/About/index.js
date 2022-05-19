@@ -1,5 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
+// import { Container, Row, Col, Image } from "react-bootstrap";
+
 
 function About() {
     const githubEndpoint = 'https://api.github.com/users/apark8496';
@@ -43,11 +44,9 @@ function About() {
                 {/* about section */}
                 <aside className='bio'>
                     <p>
-                        I'm a web developer from North Carolina, and currently live with my husband and two cats. <br />
+                        I am a Fullstack web developer from North Carolina, and currently live with my husband and two cats. <br />
                         Apart from coding, you can find me spending my time doing all things nerdy! Such as reading, <br />
-                        playing Magic the Gathering, as well as D&D and playing video games! <br />
-                        I have a certificate in Full Stack Web Development <br />
-                        from the University of North Carolina at Charlotte's Coding Bootcamp.
+                        watching anime, playing Magic the Gathering, as well as D&D and playing video games! <br />
                         <br />
                         <br />
                         I have created multiple projects using front-end technologies <br />

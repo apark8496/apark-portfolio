@@ -2,7 +2,7 @@ import React from "react";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Resume from "./Resume";
+import Skills from "./Skills";
 
 function Portfolio(props) {
 
@@ -17,7 +17,7 @@ function Portfolio(props) {
     } else if (currentDisplay === 'Contact') {
         return <main><Contact></Contact></main>
     } else {
-        return <main><Resume></Resume></main>
+        return <main><Skills></Skills></main>
     }
 }
 

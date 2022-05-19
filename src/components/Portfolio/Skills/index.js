@@ -4,7 +4,7 @@ import { SKILLS } from '../../../utils/skills.js';
 // import pdf from "../../documents/apark-resume.pdf";
 
 
-function Resume() {
+function Skills() {
 	// list known skills on resume page
 	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
 	const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
@@ -64,4 +64,4 @@ function Resume() {
 	);
 }
 
-export default Resume;
+export default Skills;

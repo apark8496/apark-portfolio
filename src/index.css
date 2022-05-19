@@ -71,8 +71,8 @@ p {
 .AP-logo {
   text-align: center;
   color: var(--sage);
-  text-decoration: wavy underline var(--pale-pink);
-  font-size: 2rem;
+  /* text-decoration: wavy underline var(--pale-pink); */
+  font-size: 3rem;
 
 }
 

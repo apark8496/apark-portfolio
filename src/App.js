@@ -11,7 +11,7 @@ function App() {
     "About", 
     "Projects",
     "Contact", 
-    "Resume"
+    "Skills"
   ]);
 
   // set current display based on nav link selection
