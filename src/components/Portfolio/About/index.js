@@ -52,7 +52,7 @@ function About() {
                         I have created multiple projects using front-end technologies <br />
                         such as JavaScript, React, HTML, and CSS as well as back-end <br />
                         tools such as Node.js, Express.js, MongoDB, GraphQL and MySQL <br />
-                        while following to development methods such as <br />
+                        while following development methods such as <br />
                         RESTful APIs, MVC structure and Single Page
                         Applications (SPAs).
                         <br />

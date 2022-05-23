@@ -11,7 +11,7 @@ function Header (props) {
     } = props;
 
     return (
-        <header>
+        <header className="header">
             <h1 className="AP-logo">AP</h1>
             {/* <a href='/'><img className='AP-logo' src="https://i.imgur.com/jkdCcPg.png" border="0"/></a> */}
 
