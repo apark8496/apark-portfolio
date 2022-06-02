@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/apark-portfolio/static/css/main.9474b757.css",
-    "main.js": "/apark-portfolio/static/js/main.3e8bc7f9.js",
+    "main.js": "/apark-portfolio/static/js/main.f8569b70.js",
     "static/js/787.4048b011.chunk.js": "/apark-portfolio/static/js/787.4048b011.chunk.js",
     "static/media/current.png": "/apark-portfolio/static/media/current.baefd55c8e8c88067ff7.png",
     "static/media/budget-tracker.png": "/apark-portfolio/static/media/budget-tracker.2f6cfa4cbeda5b1a5261.png",
-    "static/media/book-hangover.png": "/apark-portfolio/static/media/book-hangover.8c8933cb31fb8ed7c0a7.png",
     "static/media/breaking-code.png": "/apark-portfolio/static/media/breaking-code.31e84168701cff4f42d8.png",
     "static/media/schedule.png": "/apark-portfolio/static/media/schedule.26e78db45401d35a3ca0.png",
     "static/media/skittydex.png": "/apark-portfolio/static/media/skittydex.6f134e1ad626772d994a.png",
+    "static/media/book-hangover.png": "/apark-portfolio/static/media/book-hangover.92d44c2a65c9945315b8.png",
     "static/media/weather-dashboard.png": "/apark-portfolio/static/media/weather-dashboard.114f4c235283b281a046.png",
     "static/media/tech-blog.png": "/apark-portfolio/static/media/tech-blog.794719fd0ef4f82fef16.png",
+    "static/media/social.png": "/apark-portfolio/static/media/social.2c3ff39d53d9b52959b8.png",
     "static/media/jquery.svg": "/apark-portfolio/static/media/jquery.805a7ce8514466ad45de.svg",
     "static/media/mysql.svg": "/apark-portfolio/static/media/mysql.e5a509a5d3ca7443ae6c.svg",
     "static/media/react.svg": "/apark-portfolio/static/media/react.c3da1aa73c664b7e76fb.svg",
@@ -30,11 +31,11 @@
     "static/media/graphql.svg": "/apark-portfolio/static/media/graphql.7540fa74168b719e0c29.svg",
     "static/media/bulma.svg": "/apark-portfolio/static/media/bulma.ecefb4da633f2f1f370e.svg",
     "main.9474b757.css.map": "/apark-portfolio/static/css/main.9474b757.css.map",
-    "main.3e8bc7f9.js.map": "/apark-portfolio/static/js/main.3e8bc7f9.js.map",
+    "main.f8569b70.js.map": "/apark-portfolio/static/js/main.f8569b70.js.map",
     "787.4048b011.chunk.js.map": "/apark-portfolio/static/js/787.4048b011.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9474b757.css",
-    "static/js/main.3e8bc7f9.js"
+    "static/js/main.f8569b70.js"
   ]
 }
