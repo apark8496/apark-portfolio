@@ -20,7 +20,7 @@ function Skills() {
 				View or download my full resume
 				<a
 					className='resume-link'
-					href='https://drive.google.com/file/d/1alhU27J5qKkI8HWnsu3HXfVYhoHI4Wd2/view?usp=sharing'
+					href='https://drive.google.com/file/d/1ZveSb68Hi3uT1DTRJlyghEKwzc4ctFh2/view?usp=sharing'
 					target="_blank"
 					rel="noreferrer"
 				>
