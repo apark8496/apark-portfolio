@@ -250,6 +250,7 @@ p {
   flex-wrap: wrap;
   margin: 0 15% 0 15%;
   background-color: var(--languid-lavender);
+  padding: 6px;
   border-radius: 10px;
   transition: background-color 0.25s ease-in-out;
 }
