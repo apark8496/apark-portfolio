@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // import { Container, Row, Col, Image } from "react-bootstrap";
+import Github from "../../../utils/github";
 
 
 function About() {
@@ -23,6 +24,7 @@ function About() {
 
     return (
         <section>
+            <div className='title'>
             <h2 className='heading'>Hello! I'm Ashley</h2>
             <h3 className='sub-heading'>Full Stack Web Developer <br />
                 <img
@@ -33,7 +35,7 @@ function About() {
                     alt="momo"
                 />
             </h3>
-
+            </div>
             <div className='bio-container'>
                 {/* profile picture */}
                 <img
@@ -60,6 +62,7 @@ function About() {
                     {/* insert section on hobbies */}
                 </aside>
             </div>
+            <Github />
         </section>
     );
 }

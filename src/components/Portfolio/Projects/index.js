@@ -13,13 +13,13 @@ function Projects() {
         //     ghRepoUrl: "https://github.com/apark8496/social-network",
         //     description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted."
         // },
-        {
-            imagePath: "current",
-            title: "Cat Tails: Adventure Text RPG",
-            deployedUrl: "https://github.com/apark8496/cat-tails",
-            ghRepoUrl: "https://github.com/apark8496/cat-tails",
-            description: "Current Project under development!"
-        },
+        // {
+        //     imagePath: "current",
+        //     title: "Cat Tails: Adventure Text RPG",
+        //     deployedUrl: "https://github.com/apark8496/cat-tails",
+        //     ghRepoUrl: "https://github.com/apark8496/cat-tails",
+        //     description: "Current Project under development!"
+        // },
         {
             imagePath: "breaking-code",
             title: "Breaking Code: Memory Game",
