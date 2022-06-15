@@ -110,15 +110,15 @@ function Contact() {
                 <form id="contact-section" ref={form} onSubmit={handleSubmit}>
                     <div>
                         <label htmlFor="name">Name:</label>
-                        <input type="text" id="name" name="name" defaultValue={name} onBlur={handleChange}></input>
+                        <input placeholder="First & Last Name" type="text" id="name" name="name" defaultValue={name} onBlur={handleChange}></input>
                     </div>
                     <div>
                         <label htmlFor="email">Email Address:</label>
-                        <input type="email" id="email" name="email" defaultValue={email} onBlur={handleChange}></input>
+                        <input placeholder="Your Email" type="email" id="email" name="email" defaultValue={email} onBlur={handleChange}></input>
                     </div>
                     <div>
                         <label htmlFor="message">Message:</label>
-                        <textarea id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
+                        <textarea placeholder="Lets Chat!" id="message" name="message" rows="3" defaultValue={message} onBlur={handleChange}></textarea>
                     </div>
                     {errorMessage && (
                         <div className="error-msg">

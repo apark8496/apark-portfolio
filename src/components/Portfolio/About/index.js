@@ -10,11 +10,11 @@ function About() {
     const activityTheme = {
         background: "transparent",
         text: "#ffffff",
-        level4: "#141b86",
-        level3: "#1f2795",
-        level2: "#364586",
-        level1: "#9293c5",
-        level0: "#ecd9fc",
+        level4: "#727E66",
+        level3: "#61764B",
+        level2: "#A1AA9B",
+        level1: "#C0C9BA",
+        level0: "#DEE1DD",
       };
 
     // get information from github --> profile pic
@@ -84,7 +84,8 @@ function About() {
                         theme={activityTheme}
                         blockSize={15}
                         blockMargin={5}
-                        fontSize={16} />
+                        fontSize={16}
+                     />
                 </Row>
             </div>
         </section>
