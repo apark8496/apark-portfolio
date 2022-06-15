@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-// import { Container, Row, Col, Image } from "react-bootstrap";
-import Github from "../../../utils/github";
+import { Row } from "react-bootstrap";
+import GitHubCalendar from 'react-github-calendar';
 
 
 function About() {
@@ -25,26 +25,26 @@ function About() {
     return (
         <section>
             <div className='title'>
-            <h2 className='heading'>Hello! I'm Ashley</h2>
-            <h3 className='sub-heading'>Full Stack Web Developer <br />
-                <img
-                    className='momo-gif'
-                    src="https://64.media.tumblr.com/b1ad91b5fa08a0723d0c18db6d7fb6a7/tumblr_mmbekl0nCq1rfjowdo1_500.gif"
-                    width='50'
-                    height='50'
-                    alt="momo"
-                />
-            </h3>
+                <h2 className='heading'>Hello! I'm Ashley</h2>
+                <h3 className='sub-heading'>Full Stack Web Developer <br />
+                    {/* <img
+                        className='momo-gif'
+                        src="https://64.media.tumblr.com/b1ad91b5fa08a0723d0c18db6d7fb6a7/tumblr_mmbekl0nCq1rfjowdo1_500.gif"
+                        width='50'
+                        height='50'
+                        alt="momo"
+                    /> */}
+                </h3>
             </div>
             <div className='bio-container'>
-                {/* profile picture */}
+                {/* import github profile picture */}
                 <img
                     className='my-pic'
                     src={githubData.avatar_url}
                     alt='Ashley Park.'
                 />
                 {/* about section */}
-                <aside className='bio'>
+                <aside className='bio' style={{ paddingBottom: "20px" }}>
                     <p>
                         I am a Fullstack web developer from North Carolina, and currently live with my husband and two cats. <br />
                         Apart from coding, you can find me spending my time doing all things nerdy! Such as reading, <br />
@@ -62,7 +62,20 @@ function About() {
                     {/* insert section on hobbies */}
                 </aside>
             </div>
-            <Github />
+
+            {/* Github Activity Section */}
+            <div className='github-activity'>
+                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                    <h1 className="activity-heading">
+                        Coding <strong>Activity</strong>
+                    </h1>
+                    <GitHubCalendar
+                        username="apark8496"
+                        blockSize={15}
+                        blockMargin={5}
+                        fontSize={16} />
+                </Row>
+            </div>
         </section>
     );
 }
