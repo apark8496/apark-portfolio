@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apark-portfolio/static/css/main.9474b757.css",
-    "main.js": "/apark-portfolio/static/js/main.9e152827.js",
+    "main.css": "/apark-portfolio/static/css/main.c1df7a68.css",
+    "main.js": "/apark-portfolio/static/js/main.f5636e69.js",
     "static/js/787.4048b011.chunk.js": "/apark-portfolio/static/js/787.4048b011.chunk.js",
     "static/media/current.png": "/apark-portfolio/static/media/current.baefd55c8e8c88067ff7.png",
     "static/media/budget-tracker.png": "/apark-portfolio/static/media/budget-tracker.2f6cfa4cbeda5b1a5261.png",
@@ -30,12 +30,12 @@
     "static/media/bootstrap.svg": "/apark-portfolio/static/media/bootstrap.19c3fd09c600ab700734.svg",
     "static/media/graphql.svg": "/apark-portfolio/static/media/graphql.7540fa74168b719e0c29.svg",
     "static/media/bulma.svg": "/apark-portfolio/static/media/bulma.ecefb4da633f2f1f370e.svg",
-    "main.9474b757.css.map": "/apark-portfolio/static/css/main.9474b757.css.map",
-    "main.9e152827.js.map": "/apark-portfolio/static/js/main.9e152827.js.map",
+    "main.c1df7a68.css.map": "/apark-portfolio/static/css/main.c1df7a68.css.map",
+    "main.f5636e69.js.map": "/apark-portfolio/static/js/main.f5636e69.js.map",
     "787.4048b011.chunk.js.map": "/apark-portfolio/static/js/787.4048b011.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9474b757.css",
-    "static/js/main.9e152827.js"
+    "static/css/main.c1df7a68.css",
+    "static/js/main.f5636e69.js"
   ]
 }
