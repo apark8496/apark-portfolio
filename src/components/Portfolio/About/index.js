@@ -6,6 +6,16 @@ import GitHubCalendar from 'react-github-calendar';
 function About() {
     const githubEndpoint = 'https://api.github.com/users/apark8496';
     const [githubData, setGithubData] = useState('');
+    // github activity color scheme
+    const activityTheme = {
+        background: "transparent",
+        text: "#ffffff",
+        level4: "#141b86",
+        level3: "#1f2795",
+        level2: "#364586",
+        level1: "#9293c5",
+        level0: "#ecd9fc",
+      };
 
     // get information from github --> profile pic
     useEffect(() => {
@@ -71,6 +81,7 @@ function About() {
                     </h1>
                     <GitHubCalendar
                         username="apark8496"
+                        theme={activityTheme}
                         blockSize={15}
                         blockMargin={5}
                         fontSize={16} />
