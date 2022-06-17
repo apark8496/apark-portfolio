@@ -8,12 +8,6 @@ import Col from 'react-bootstrap/Col';
 function Projects() {
     const [featuredProjects] = useState([
         // {
-        //     imagePath: "social",
-        //     title: "Social Network: Backend",
-        //     ghRepoUrl: "https://github.com/apark8496/social-network",
-        //     description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted."
-        // },
-        // {
         //     imagePath: "current",
         //     title: "Cat Tails: Adventure Text RPG",
         //     deployedUrl: "https://github.com/apark8496/cat-tails",
@@ -61,7 +55,14 @@ function Projects() {
             deployedUrl: "https://apark8496.github.io/work-day-scheduler/",
             ghRepoUrl: "https://github.com/apark8496/work-day-scheduler/",
             description: "An app that lets users view their schedule for the day."
+        },
+        {
+            imagePath: "social",
+            title: "Social Network: Backend",
+            ghRepoUrl: "https://github.com/apark8496/social-network",
+            description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted."
         }
+            
     ])
 
     return (

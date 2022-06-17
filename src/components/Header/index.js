@@ -1,5 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Header (props) {
 
@@ -13,6 +14,7 @@ function Header (props) {
     return (
         <header className="header">
             <h1 className="AP-logo">AP</h1>
+
             {/* <a href='/'><img className='AP-logo' src="https://i.imgur.com/jkdCcPg.png" border="0"/></a> */}
 
             {/* passing nav links and current display settings on to header as props */}
