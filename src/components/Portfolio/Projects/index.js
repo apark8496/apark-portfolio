@@ -19,48 +19,59 @@ function Projects() {
             title: "Breaking Code: Memory Game",
             deployedUrl: "https://fathomless-retreat-80150.herokuapp.com/",
             ghRepoUrl: "https://github.com/barrantesc/BreakingCode",
-            description: "A memory game application that makes coding technical interview questions fun by matching cards."
+            description: "A memory game application that makes coding technical interview questions fun by matching cards.",
+            tags: "React, NodeJS, ExpressJS, HTML, CSS, JavaScript, MongoDB, Apollo, JWT"
         },
         {
             imagePath: "skittydex",
             title: "Skittydex Pokemon Team Builder & Blog",
             deployedUrl: "https://skittydex.herokuapp.com",
             ghRepoUrl: "https://github.com/apark8496/SkittyDex",
-            description: "An app for trainers looking to build their ideal team, communicate with others in the community through finding other trainers to battle and trade in game with."
+            description: "An app for trainers looking to build their ideal team, and find other trainers to battle, trade, or communicate in game with.",
+            tags: "NodeJS, ExpressJS, HTML, CSS, JavaScript, mySQL, sequelize, Handlebars, PokeAPI"
+
         },
         {
             imagePath: "book-hangover",
             title: "The Book Hangover Cure",
             deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
             ghRepoUrl: "https://github.com/apark8496/The-Book-Hangover-Cure",
-            description: "A book generator app that allows the reader to search a book and receive similar recommendations. To add a little spice as a play on the website title, the reader is also provided with a random cocktail to try with the book they searched."
+            description: "An that allows the reader to search a book and receive similar recommendations. To add a little spice as a play on the website title, the reader is also provided with a random cocktail to try with the book they searched.",
+            tags: "HTML, CSS, JavaScript, googleAPI, CocktailDB API"
         },
         {
             imagePath: "budget-tracker",
             title: "Budget Tracker",
             deployedUrl: "https://personal-budget-pwa.herokuapp.com/",
             ghRepoUrl: "https://github.com/apark8496/budget-tracker",
-            description: "An app that allows users to keep track of their personal budget. It can be updated offline/online."
+            description: "An app that allows users to keep track of their personal budget. It can be updated offline/online.",
+            tags: "HTML, CSS, JavaScript, PWA, NoSQL, Mongoose"
         },
         {
             imagePath: "weather-dashboard",
             title: "Weather Dashboard",
             deployedUrl: "https://apark8496.github.io/rainy-day-weather-app/",
             ghRepoUrl: "https://github.com/apark8496/rainy-day-weather-app/",
-            description: "An app that allows users to view the 5 day forecast in their desired city."
+            description: "An app that allows users to view the 5 day forecast in their desired city.",
+            tags: "HTML, CSS, JavaScript, OpenWeather API"
+
         },
         {
             imagePath: "schedule",
             title: "Work Day Scheduler",
             deployedUrl: "https://apark8496.github.io/work-day-scheduler/",
             ghRepoUrl: "https://github.com/apark8496/work-day-scheduler/",
-            description: "An app that lets users view their schedule for the day."
+            description: "An app that lets users view their schedule for the day.",
+            tags: "HTML, CSS, JavaScript"
+
         },
         {
             imagePath: "social",
             title: "Social Network: Backend",
             ghRepoUrl: "https://github.com/apark8496/social-network",
-            description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted."
+            description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted.",
+            tags: "HTML, CSS, JavaScript, dayJS, expressJS, Mongoose, Insomnia"
+
         }
             
     ])
@@ -76,6 +87,7 @@ function Projects() {
                             <Card.Body className="card-info">
                                 <Card.Title className="text-title">{project.title}</Card.Title>
                                 <Card.Text className="card-description">{project.description}</Card.Text>
+                                <Card.Text className="card-description tags">Technologies: {project.tags}</Card.Text>
                                 <Card.Link className="text-body">
                                     <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
                                         <img className="project-icon" src={require("../../../assets/icons/github.png")} alt="GitHub icon" />
