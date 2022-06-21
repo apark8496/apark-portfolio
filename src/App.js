@@ -1,40 +1,26 @@
-import React, {useState} from 'react';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // Portfolio components 
-import Header from './components/Header';
-import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
+import Navbar from './components/navbar';
+import About from './pages/about';
+import Projects from './pages/projects';
+import Contact from './pages/contact';
+import Skills from './pages/skills';
+import Footer from './components/footer';
 
 
 function App() {
-  // arr of nav links
-  const [navLinks] = useState([
-    "About", 
-    "Projects",
-    "Contact", 
-    "Skills"
-  ]);
 
-  // set current display based on nav link selection
-  const [currentDisplay, setCurrentDisplay] = useState(navLinks[0]);
-  const [contactSelected, setContactSelected] = useState(false);
   return (
-    <div>
-        {/* passing nav links and current display settings on to header as props */}
-        <Header
-          navLinks={navLinks}
-          currentDisplay={currentDisplay}
-          setCurrentDisplay={setCurrentDisplay}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-        ></Header>
-
-        {/* passing current display settings on to main section as props */}
-        <Portfolio
-          currentDisplay={currentDisplay}
-        ></Portfolio>
-
-        <Footer></Footer>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<About />} />
+        <Route path='/projects' element={<Projects />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/skills' element={<Skills />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

@@ -83,17 +83,17 @@ function Projects() {
                 <Row className="cards">
                     <Col>
                         <Card className="card" style={{ width: '30rem' }} key={project.title}>
-                            <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../../../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                            <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                             <Card.Body className="card-info">
                                 <Card.Title className="text-title">{project.title}</Card.Title>
                                 <Card.Text className="card-description">{project.description}</Card.Text>
                                 <Card.Text className="card-description tags">Technologies: {project.tags}</Card.Text>
                                 <Card.Link className="text-body">
                                     <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
-                                        <img className="project-icon" src={require("../../../assets/icons/github.png")} alt="GitHub icon" />
+                                        <img className="project-icon" src={require("../assets/icons/github.png")} alt="GitHub icon" />
                                     </a>
                                     <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
-                                        <img className="project-icon" src={require("../../../assets/icons/site.png")} alt="Website icon" />
+                                        <img className="project-icon" src={require("../assets/icons/site.png")} alt="Website icon" />
                                     </a>
                                 </Card.Link>
                             </Card.Body>
