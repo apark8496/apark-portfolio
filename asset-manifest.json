@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apark-portfolio/static/css/main.f09b0887.css",
-    "main.js": "/apark-portfolio/static/js/main.28acbfe0.js",
+    "main.css": "/apark-portfolio/static/css/main.7db3d7ea.css",
+    "main.js": "/apark-portfolio/static/js/main.31f7f094.js",
     "static/js/787.4048b011.chunk.js": "/apark-portfolio/static/js/787.4048b011.chunk.js",
     "static/media/employee.png": "/apark-portfolio/static/media/employee.c3cb71baabbe151f2a13.png",
     "static/media/current.png": "/apark-portfolio/static/media/current.baefd55c8e8c88067ff7.png",
@@ -30,13 +30,14 @@
     "index.html": "/apark-portfolio/index.html",
     "static/media/bootstrap.svg": "/apark-portfolio/static/media/bootstrap.19c3fd09c600ab700734.svg",
     "static/media/graphql.svg": "/apark-portfolio/static/media/graphql.7540fa74168b719e0c29.svg",
+    "static/media/heroku.svg": "/apark-portfolio/static/media/heroku.36003bb4d6a28f420ac9.svg",
     "static/media/bulma.svg": "/apark-portfolio/static/media/bulma.ecefb4da633f2f1f370e.svg",
-    "main.f09b0887.css.map": "/apark-portfolio/static/css/main.f09b0887.css.map",
-    "main.28acbfe0.js.map": "/apark-portfolio/static/js/main.28acbfe0.js.map",
+    "main.7db3d7ea.css.map": "/apark-portfolio/static/css/main.7db3d7ea.css.map",
+    "main.31f7f094.js.map": "/apark-portfolio/static/js/main.31f7f094.js.map",
     "787.4048b011.chunk.js.map": "/apark-portfolio/static/js/787.4048b011.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f09b0887.css",
-    "static/js/main.28acbfe0.js"
+    "static/css/main.7db3d7ea.css",
+    "static/js/main.31f7f094.js"
   ]
 }
