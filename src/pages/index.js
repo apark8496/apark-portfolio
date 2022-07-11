@@ -1,8 +1,8 @@
 import React from "react";
-import About from "./About";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import Skills from "./Skills";
+import About from "./About/about";
+import Projects from "./Projects/projects";
+import Contact from "./Contact/contact";
+import Skills from "./Skills/skills";
 
 function Portfolio(props) {
 
