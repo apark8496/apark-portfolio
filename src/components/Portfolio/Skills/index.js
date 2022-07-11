@@ -8,6 +8,12 @@ function Skills() {
 	// list known skills on resume page
 	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
 	const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
+	const programmingSkills = SKILLS.filter(skill => skill.type === 'programming-language');
+	const librarySkills = SKILLS.filter(skill => skill.type === 'library-framework');
+	const databaseSkills = SKILLS.filter(skill => skill.type === 'database');
+	const platformSkills = SKILLS.filter(skill => skill.type === 'platform');
+
+
 	// add in more (frameworks/databases/programming languages --> not just front/back skill list)
 
 	// provide resume
