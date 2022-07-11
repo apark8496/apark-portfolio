@@ -6,8 +6,8 @@ import { SKILLS } from '../../../utils/skills.js';
 
 function Skills() {
 	// list known skills on resume page
-	const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
-	const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
+	// const frontendSkills = SKILLS.filter(skill => skill.type === 'front-end');
+	// const backendSkills = SKILLS.filter(skill => skill.type === 'back-end');
 	const programmingSkills = SKILLS.filter(skill => skill.type === 'programming-language');
 	const librarySkills = SKILLS.filter(skill => skill.type === 'library-framework');
 	const databaseSkills = SKILLS.filter(skill => skill.type === 'database');
@@ -40,9 +40,9 @@ function Skills() {
 			</div> */}
 
 			{/* skills */}
-			<h3 className='heading'>Front-End Skills</h3>
+			<h3 className='heading'>Programming Languages</h3>
 			<div className='icon-list'>
-				{frontendSkills.map(skill => (
+				{programmingSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
 							src={require(`../../../assets/skill-icons/${skill.file}`)}
@@ -53,9 +53,35 @@ function Skills() {
 					</div>
 				))}
 			</div>
-			<h3 className='heading'>Back-End Skills</h3>
+			<h3 className='heading'>Libraries and Frameworks</h3>
 			<div className='icon-list'>
-				{backendSkills.map(skill => (
+				{librarySkills.map(skill => (
+					<div key={skill.name} className='skill-div flex space-b'>
+						<img
+							src={require(`../../../assets/skill-icons/${skill.file}`)}
+							className='skill-icon'
+							alt={`Icon for ${skill.name}`}
+						/>
+						<span className='skill-text'>{skill.name}</span>
+					</div>
+				))}
+			</div>
+			<h3 className='heading'>Databases</h3>
+			<div className='icon-list'>
+				{databaseSkills.map(skill => (
+					<div key={skill.name} className='skill-div flex space-b'>
+						<img
+							src={require(`../../../assets/skill-icons/${skill.file}`)}
+							className='skill-icon'
+							alt={`Icon for ${skill.name}`}
+						/>
+						<span className='skill-text'>{skill.name}</span>
+					</div>
+				))}
+			</div>
+			<h3 className='heading'>Platforms</h3>
+			<div className='icon-list'>
+				{platformSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
 							src={require(`../../../assets/skill-icons/${skill.file}`)}

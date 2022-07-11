@@ -2,97 +2,83 @@ export const SKILLS = [
 	{
 		name: 'HTML',
 		file: 'html-5.svg',
-		type: 'front-end',
-		skill: 'programming-language',
+		type: 'programming-language',
 	},
 	{
 		name: 'CSS',
 		file: 'css.svg',
-		type: 'front-end',
-		skill: 'programming-language',
+		type: 'programming-language',
 	},
 	{
 		name: 'JavaScript',
 		file: 'javascript.svg',
-		type: 'front-end',
-		skill: 'programming-language',
+		type: 'programming-language',
 	},
 	{
 		name: 'React',
 		file: 'react.svg',
-		type: 'front-end',
-		skill: 'library-framework',
+		type: 'library-framework',
 	},
 	{
 		name: 'jQuery',
 		file: 'jquery.svg',
-		type: 'front-end',
-		skill: 'library-framework',
+		type: 'library-framework',
 
 	},
 	{
 		name: 'Bootstrap',
 		file: 'bootstrap.svg',
-		type: 'front-end',
-		skill: 'library-framework',
+		type: 'library-framework',
 
 	},
 
 	{
 		name: 'Node.js',
 		file: 'nodejs.svg',
-		type: 'back-end',
-		skill: 'library-framework',
+		type: 'library-framework',
 
 	},
 	{
 		name: 'Express.js',
 		file: 'expressjs.svg',
-		type: 'back-end',
-		skill: 'library-framework',
+		type: 'library-framework',
 
 	},
 
 	{
 		name: 'MongoDB',
 		file: 'mongodb.svg',
-		type: 'back-end',
-		skill: 'database',
+		type: 'database',
 
 	},
 	{
 		name: 'GraphQL',
 		file: 'graphql.svg',
-		type: 'front-end',
-		skill: 'database',
+		type: 'database',
 
 	},
 	{
 		name: 'MySQL',
 		file: 'mysql.svg',
-		type: 'back-end',
-		skill: 'database',
+		type: 'database',
 
 	},
 	{
 		name: 'Sequelize',
 		file: 'sequelize.svg',
-		type: 'back-end',
-		skill: 'database',
+		type: 'database',
 
 	},
 	{
 		name: 'Git',
 		file: 'git-icon.svg',
-		type: 'other',
-		skill: 'platform',
+		type: 'platform',
 
 	},
 	{
 		name: 'Heroku',
-		file: 'git-icon.svg',
-		type: 'other',
-		skill: 'platform',
+		file: 'heroku.svg',
+		type: 'platform',
 
 	},
 ];
