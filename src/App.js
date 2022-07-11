@@ -1,27 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Portfolio components 
-import Navbar from './components/Navbar';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Skills from './pages/Skills';
-import Footer from './components/Footer';
+import Portfolio from "./pages/portfolio";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path='/' exact component={About} />
-        <Route path='/projects' component={Projects} />
-        <Route path='/contact' component={Contact} />
-        <Route path='/skills' component={Skills} />
-      </Switch>
-    </Router>
-  );
+<div>
+    <header className="header">
+      <h1 class="AP-logo">AP</h1>
+    </header>
+    <Portfolio />
+    <Footer />
+  </div>
+);
 }
   
 export default App;
