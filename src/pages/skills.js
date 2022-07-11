@@ -58,7 +58,7 @@ function Skills() {
 				{librarySkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../../assets/skill-icons/${skill.file}`)}
+							src={require(`../assets/skill-icons/${skill.file}`)}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
@@ -71,7 +71,7 @@ function Skills() {
 				{databaseSkills.map(skill => (
 					<div key={skill.name} className='skill-div flex space-b'>
 						<img
-							src={require(`../../../assets/skill-icons/${skill.file}`)}
+							src={require(`../assets/skill-icons/${skill.file}`)}
 							className='skill-icon'
 							alt={`Icon for ${skill.name}`}
 						/>
