@@ -103,7 +103,7 @@ p {
   text-decoration: none;
 }
 
-.nav-item:hover {
+a:hover {
   cursor: pointer;
   color: var(--languid-lavender);
   text-decoration: wavy underline var(--pale-pink);

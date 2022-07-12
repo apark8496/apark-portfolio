@@ -1,20 +1,29 @@
-import React from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 // Portfolio components 
-import Portfolio from "./pages/portfolio";
-import Footer from "./components/Footer";
+import Navigation from "./components/navbar";
+import About from "./components/about";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
+import Skills from "./components/skills";
+import Footer from "./components/footer";
 
 
 function App() {
   return (
-<div>
-    <header className="header">
-      <h1 class="AP-logo">AP</h1>
-    </header>
-    <Portfolio />
-    <Footer />
-  </div>
-);
+    <div className='App'>
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route exact path='/apark-portfolio' component={About} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/skills' component={Skills} />
+        </Switch>
+      </Router>
+      <Footer />
+    </div>
+  );
 }
-  
+
 export default App;
