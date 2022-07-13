@@ -1,39 +1,27 @@
-import React, {useState} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
 // Portfolio components 
-import Header from './components/Header';
-import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
+import Navigation from "./components/navbar";
+import About from "./components/about";
+import Projects from "./components/projects";
+import Contact from "./components/contact";
+import Skills from "./components/skills";
+import Footer from "./components/footer";
 
 
 function App() {
-  // arr of nav links
-  const [navLinks] = useState([
-    "About", 
-    "Projects",
-    "Contact", 
-    "Skills"
-  ]);
-
-  // set current display based on nav link selection
-  const [currentDisplay, setCurrentDisplay] = useState(navLinks[0]);
-  const [contactSelected, setContactSelected] = useState(false);
   return (
-    <div>
-        {/* passing nav links and current display settings on to header as props */}
-        <Header
-          navLinks={navLinks}
-          currentDisplay={currentDisplay}
-          setCurrentDisplay={setCurrentDisplay}
-          contactSelected={contactSelected}
-          setContactSelected={setContactSelected}
-        ></Header>
-
-        {/* passing current display settings on to main section as props */}
-        <Portfolio
-          currentDisplay={currentDisplay}
-        ></Portfolio>
-
-        <Footer></Footer>
+    <div className='App'>
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route exact path='/apark-portfolio' component={About} />
+          <Route path='/projects' component={Projects} />
+          <Route path='/contact' component={Contact} />
+          <Route path='/skills' component={Skills} />
+        </Switch>
+      </Router>
+      <Footer />
     </div>
   );
 }
