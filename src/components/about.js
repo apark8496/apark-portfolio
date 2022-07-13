@@ -76,9 +76,9 @@ function About() {
             {/* Github Activity Section */}
             <div className='github-activity'>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                    <h1 className="activity-heading">
+                    <h2 className="activity-heading">
                         Coding <strong>Activity</strong>
-                    </h1>
+                    </h2>
                     <GitHubCalendar
                         username="apark8496"
                         theme={activityTheme}

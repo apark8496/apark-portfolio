@@ -26,7 +26,7 @@ function Skills() {
 				View or download my full resume
 				<a
 					className='resume-link'
-					href='https://drive.google.com/file/d/1ZveSb68Hi3uT1DTRJlyghEKwzc4ctFh2/view?usp=sharing'
+					href='https://drive.google.com/file/d/17y19FcBtQDLUiFEnPvw8RAUauUsFcshw/view?usp=sharing'
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -43,7 +43,7 @@ function Skills() {
 			<h3 className='heading'>Programming Languages</h3>
 			<div className='icon-list'>
 				{programmingSkills.map(skill => (
-					<div key={skill.name} className='skill-div flex space-b'>
+					<div key={skill.name} className='skill-div'>
 						<img
 							src={require(`../assets/skill-icons/${skill.file}`)}
 							className='skill-icon'
