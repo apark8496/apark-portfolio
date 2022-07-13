@@ -75,24 +75,21 @@ p {
 /* header */
 
 .AP-logo {
-  text-align: center;
   color: var(--sage);
   font-size: 3rem;
   text-decoration: none;
-  /* text-decoration: wavy underline var(--pale-pink); */
+}
+
+.AP-logo:hover {
+  cursor: pointer;
+  color: var(--languid-lavender);
 }
 
 .nav-item {
   margin: auto;
   align-content: space-around;
-  color: var(--languid-lavender);
+  color: var(--sage);
   list-style: none;
-}
-
-
-.nav-item:hover {
-  cursor: pointer;
-  color: var(--languid-lavender);
 }
 
 .current-page {
