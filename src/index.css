@@ -1,6 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light+Two&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
-;
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -32,7 +31,7 @@ body {
 }
 
 h2,
-h3 {
+h3, h5 {
   text-align: center;
   color: var(--sage);
 }
@@ -65,8 +64,9 @@ h3 {
 
 .AP-logo {
   color: var(--sage);
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration: none;
+  text-align: center;
 }
 
 .AP-logo:hover {
@@ -74,9 +74,19 @@ h3 {
   color: var(--languid-lavender);
 }
 
+.navbar {
+  transition: all 0.3s ease-out 0s !important;
+  padding: 0.3rem 2rem !important;
+  font-size: 1.2rem !important;
+}
+
+.navbar-toggler {
+  padding: 0.25rem 1.5rem !important;
+  position: relative !important;
+}
+
 .nav-item {
     list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -516,11 +526,11 @@ h3 {
 
 .footer-basic span {
   justify-content: space-between;
-  padding: 10px 5%;
+  padding: 2% 5%;
 }
 
 .footer-basic .copyright {
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
   font-size: 13px;
   color: #aaa;
@@ -539,15 +549,6 @@ h3 {
 
 /* media */
 @media screen and (min-width: 420px) {
-  .nav-link {
-    font-size: 20px;
-  }
-
-  /* .my-pic {
-    width: 60%;
-    margin-bottom: 5%;
-  } */
-
 
   .bio p {
     font-size: 20px;
@@ -561,32 +562,10 @@ h3 {
     margin: auto;
   }
 
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-  }
-
-  /* .my-pic {
-    width: 50%;
-    margin-bottom: 5%;
-  } */
-
-  /* .card {
-    grid-template-columns: repeat(1, 1fr);
-  } */
-
   .text-title {
     font-size: 20px;
     width: 60%;
   }
-
-  /* .project-links {
-    width: 10%;
-  }
-
-  .project-icon {
-    height: 20px;
-  } */
 
 }
 
@@ -611,44 +590,11 @@ h3 {
     width: 95%;
   }
 
-  header {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    align-content: space-between;
-  }
-
-  h1 {
-    display: inline;
-    font-size: 26px;
-    padding-bottom: 0;
-    width: 40%;
-    text-align: left;
-  }
-
-  nav {
-    margin: auto;
-    width: 60%;
-    padding-bottom: 0;
-  }
-
-  .nav-links {
-    padding-bottom: 0;
-  }
-
-  .nav-item {
-    padding-top: 10px;
-  }
 
   .bio-container {
     flex-direction: row;
   }
 
-  /* .my-pic {
-    width: 30%;
-    padding: 10px;
-  } */
 
   .bio {
     width: 70%;
@@ -656,22 +602,9 @@ h3 {
     margin: auto;
   }
 
-  /* 
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    margin-bottom: 50px;
-  } */
-
-
   .text-title {
     width: 70%;
   }
-
-  /* .project-link {
-    width: 30%;
-  } */
 
   #contact-section {
     width: 70%;
