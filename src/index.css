@@ -159,9 +159,9 @@ h3, h5 {
 /* make project card hover to show more info effect */
 .wrapper-grid {
   margin: 1rem;
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
-  grid-gap: 1rem;
+  display: grid !important; 
+  grid-template-columns: repeat(auto-fit, minmax(20rem,30rem)) !important;
+  gap: 1rem;
   padding: 1rem;
   justify-content: center;
 }
@@ -171,10 +171,6 @@ h3, h5 {
   height: 350px;
   border-radius: 1em;
   padding: 1.5rem;
-  /* gap: 1em; */
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* background: #f5f5f5; */
   position: relative;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);

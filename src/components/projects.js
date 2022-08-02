@@ -65,14 +65,14 @@ function Projects() {
             tags: "HTML, CSS, JavaScript"
 
         },
-        {
-            imagePath: "social",
-            title: "Social Network: Backend",
-            ghRepoUrl: "https://github.com/apark8496/social-network",
-            description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted.",
-            tags: "HTML, CSS, JavaScript, dayJS, expressJS, Mongoose, Insomnia"
+        // {
+        //     imagePath: "social",
+        //     title: "Social Network: Backend",
+        //     ghRepoUrl: "https://github.com/apark8496/social-network",
+        //     description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted.",
+        //     tags: "HTML, CSS, JavaScript, dayJS, expressJS, Mongoose, Insomnia"
 
-        }
+        // }
 
     ])
 
@@ -81,40 +81,35 @@ function Projects() {
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
                 <div className="wrapper-grid">
-                        <Row xs={1} md={2} className="g-4">
-                        {/* {Array.from({ length: 4 }).map((_, idx) => ( */}
-        <Col>
-
-                    <Card className="card" key={project.title}>
-                    {/* project img overlay */}
-                    <Card.Img className="card-img" src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
-            
-                            <Card.Body className="card-info">
-                                {/* name of project */}
-                                <Card.Title className="text-title">{project.title}</Card.Title>
-                                {/* project description and links to gh/site */}
-                                <Card.Text className="card-description">{project.description}</Card.Text>
-                                <Card.Text className="card-description tags">Technologies: {project.tags}</Card.Text>
-                                <Card.Link href={project.ghRepoUrl} target="_blank" rel="noreferrer" className="text-body">Github
-                                </Card.Link>
-                                <Card.Link href={project.deployedUrl} target="_blank" rel="noreferrer" className="text-body">Site
-                                </Card.Link>
-                                {/* imgs for gh/site */}
-                                {/* <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
+                    <Row >
+                        <Col>
+                            <Card className="card" style={{ maxwidth: '30rem' }} key={project.title}>
+                                {/* project img overlay */}
+                                <Card.Img className="card-img" style={{ maxwidth: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                                <Card.Body className="card-info">
+                                    {/* name of project */}
+                                    <Card.Title className="text-title">{project.title}</Card.Title>
+                                    {/* project description and links to gh/site */}
+                                    <Card.Text className="card-description">{project.description}</Card.Text>
+                                    <Card.Text className="card-description tags">Technologies: {project.tags}</Card.Text>
+                                    <Card.Link href={project.ghRepoUrl} target="_blank" rel="noreferrer" className="text-body">Github
+                                    </Card.Link>
+                                    <Card.Link href={project.deployedUrl} target="_blank" rel="noreferrer" className="text-body">Site
+                                    </Card.Link>
+                                    {/* imgs for gh/site */}
+                                    {/* <a className="project-link" href={project.ghRepoUrl} target="_blank" rel="noreferrer">
                                         <img className="project-icon" src={require("../../../assets/icons/github.png")} alt="GitHub icon" />
                                     </a>
                                     <a className="project-link" href={project.deployedUrl} target="_blank" rel="noreferrer">
                                         <img className="project-icon" src={require("../../../assets/icons/site.png")} alt="Website icon" />
                                     </a> */}
-                            </Card.Body>
+                                </Card.Body>
                             </Card>
                         </Col>
-                        {/* ))} */}
                     </Row>
                 </div>
-    ))
-}
-        </div >
+            ))}
+        </div>
     )
 };
 
