@@ -79,12 +79,14 @@ function About() {
                     <h2 className="activity-heading">
                         Coding <strong>Activity</strong>
                     </h2>
-                    <GitHubCalendar
+                    <GitHubCalendar 
+                        responsive={true}
                         username="apark8496"
                         theme={activityTheme}
-                        blockSize={15}
-                        blockMargin={5}
-                        fontSize={16}
+                        blockSize={13}
+                        blockMargin={4}
+                        blockRadius={7}
+                        fontSize={14}
                      />
                 </Row>
             </div>

@@ -155,21 +155,20 @@ h3, h5 {
   justify-content: center;
   align-items: center;
 }
-/* projects */
+* projects */
 /* make project card hover to show more info effect */
 .wrapper-grid {
-  margin: 1rem;
-  display: grid !important; 
-  grid-template-columns: repeat(auto-fit, minmax(20rem,30rem)) !important;
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
   gap: 1rem;
   padding: 1rem;
   justify-content: center;
 }
 
 .card {
-  width: 300px;
-  height: 350px;
   border-radius: 1em;
+  padding: 1.5rem;
+  gap: 1em;
   padding: 1.5rem;
   position: relative;
   transition: 0.4s ease-out;
@@ -237,12 +236,6 @@ h3, h5 {
   background-color: var(--sage);
 }
 
-/* .tags {
-  background-color: var(--sage);
-  border-radius: 10px;
-  padding: 5px;  
-} */
-
 /*Hover*/
 .card:hover {
   -webkit-transform: translateY(5%);
@@ -261,12 +254,6 @@ h3, h5 {
   -ms-transform: translateY(0);
   transform: translateY(0);
 }
-
-/* .project-icon {
-  align-items: center;
-  align-content: space-between;
-  padding: 10px;
-} */
 
 /* contact */
 .email {

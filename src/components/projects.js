@@ -65,14 +65,14 @@ function Projects() {
             tags: "HTML, CSS, JavaScript"
 
         },
-        // {
-        //     imagePath: "social",
-        //     title: "Social Network: Backend",
-        //     ghRepoUrl: "https://github.com/apark8496/social-network",
-        //     description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted.",
-        //     tags: "HTML, CSS, JavaScript, dayJS, expressJS, Mongoose, Insomnia"
+        {
+            imagePath: "social",
+            title: "Social Network: Backend",
+            ghRepoUrl: "https://github.com/apark8496/social-network",
+            description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted.",
+            tags: "HTML, CSS, JavaScript, dayJS, expressJS, Mongoose, Insomnia"
 
-        // }
+        }
 
     ])
 
@@ -83,9 +83,9 @@ function Projects() {
                 <div className="wrapper-grid">
                     <Row >
                         <Col>
-                            <Card className="card" style={{ maxwidth: '30rem' }} key={project.title}>
+                            <Card className="card" style={{ width: '30rem' }} key={project.title}>
                                 {/* project img overlay */}
-                                <Card.Img className="card-img" style={{ maxwidth: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                                <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                                 <Card.Body className="card-info">
                                     {/* name of project */}
                                     <Card.Title className="text-title">{project.title}</Card.Title>
