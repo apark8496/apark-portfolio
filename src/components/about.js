@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Row } from "react-bootstrap";
 import GitHubCalendar from 'react-github-calendar';
 
-
 function About() {
     const githubEndpoint = 'https://api.github.com/users/apark8496';
     const [githubData, setGithubData] = useState('');
@@ -79,14 +78,15 @@ function About() {
                     <h2 className="activity-heading">
                         Coding <strong>Activity</strong>
                     </h2>
-                    <GitHubCalendar 
+                    <GitHubCalendar
                         responsive={true}
                         username="apark8496"
+                        year={new Date().getFullYear()}
                         theme={activityTheme}
-                        blockSize={13}
+                        blockSize={15}
                         blockMargin={4}
                         blockRadius={7}
-                        fontSize={14}
+                        fontSize={16}
                      />
                 </Row>
             </div>
