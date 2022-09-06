@@ -83,9 +83,9 @@ function Projects() {
                 <div className="wrapper-grid">
                     <Row >
                         <Col>
-                            <Card className="card" style={{ width: '30rem' }} key={project.title}>
+                            <Card className="card"  key={project.title}>
                                 {/* project img overlay */}
-                                <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                                <Card.Img className="card-img" src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                                 <Card.Body className="card-info">
                                     {/* name of project */}
                                     <Card.Title className="text-title">{project.title}</Card.Title>

@@ -64,7 +64,7 @@ h3, h5 {
 
 .AP-logo {
   color: var(--sage);
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-decoration: none;
   text-align: center;
 }
@@ -74,10 +74,13 @@ h3, h5 {
   color: var(--languid-lavender);
 }
 
+/* fix nav bar display on bigger media q */
 .navbar {
+  display: flex;
+  flex-wrap: wrap;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+  font-size: 1.3rem !important;
 }
 
 .navbar-toggler {
@@ -97,9 +100,7 @@ h3, h5 {
 
 .nav-link {
   color: var(--sage) !important;
-  padding: 5px 0 2px;
   margin: auto;
-  text-decoration: none;
 }
 
 .nav-link:hover {
@@ -115,14 +116,14 @@ h3, h5 {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  margin: 2% 0;
 }
 
+/* need to fix the white space in the paragraph area */
 .bio {
   background-color: var(--languid-lavender);
-  max-width: 65%;
+  max-width: 70%;
   border-radius: 10px;
-  padding: 5%;
+  padding: 7%;
   color: #ffffff;
   /* opacity: 75%; */
   line-height: 2rem;
@@ -155,10 +156,12 @@ h3, h5 {
   justify-content: center;
   align-items: center;
 }
-* projects */
-/* make project card hover to show more info effect */
-.wrapper-grid {
-  display: inline-grid;
+
+
+/* * projects */ 
+
+ .wrapper-grid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
   gap: 1rem;
   padding: 1rem;
@@ -166,6 +169,7 @@ h3, h5 {
 }
 
 .card {
+  max-width: 30rem;
   border-radius: 1em;
   padding: 1.5rem;
   gap: 1em;
@@ -201,9 +205,9 @@ h3, h5 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: default;
-}
+} 
 
-/*Text*/
+/* Card Text */
 .text-title {
   color: #000000;
   font-size: 1.7rem;
@@ -213,9 +217,9 @@ h3, h5 {
   border-radius: 10px;
   padding: 1%;
   cursor: default;
-}
+} 
 
-/*Image*/
+/* Card Image */
 .card-img {
   width: 450px;
   height: 350px;
@@ -234,9 +238,9 @@ h3, h5 {
 
 .text-body:hover {
   background-color: var(--sage);
-}
+} 
 
-/*Hover*/
+/* Hover */
 .card:hover {
   -webkit-transform: translateY(5%);
   -ms-transform: translateY(5%);
@@ -253,10 +257,11 @@ h3, h5 {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-}
+} 
 
 /* contact */
 .email {
+  max-width: 80%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -411,6 +416,8 @@ h3, h5 {
   text-align: center;
 }
 
+/* add in column for github/linkedin */
+
 /* resume */
 .resume-section {
   display: flex;
@@ -487,7 +494,7 @@ h3, h5 {
   border-radius: 5px;
   background-color: var(--sage);
   padding: 3px;
-  margin: 10px 20px 2px 20px;
+  margin: 8px 15px 2px 15px;
 }
 
 .skill-text {

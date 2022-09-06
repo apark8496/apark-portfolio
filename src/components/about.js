@@ -3,8 +3,10 @@ import { Row } from "react-bootstrap";
 import GitHubCalendar from 'react-github-calendar';
 
 function About() {
+    // connect github to portfolio to obtain data
     const githubEndpoint = 'https://api.github.com/users/apark8496';
     const [githubData, setGithubData] = useState('');
+
     // github activity color scheme
     const activityTheme = {
         background: "transparent",
@@ -16,7 +18,7 @@ function About() {
         level0: "#DEE1DD",
       };
 
-    // get information from github --> profile pic
+    // obtain data from github --> profile pic
     useEffect(() => {
         getGithubData();
     }, []);
@@ -31,6 +33,7 @@ function About() {
         }
     };
 
+    // about section
     return (
         <section>
             <div className='title'>
@@ -48,17 +51,18 @@ function About() {
             <div className='bio-container'>
                 {/* import github profile picture */}
                 <img
-                    className='my-pic'
+                    className='my-pic' style={{width: "350px"}}
                     src={githubData.avatar_url}
                     alt='Ashley Park.'
                 />
                 {/* about section */}
-                <aside className='bio' style={{ paddingBottom: "20px" }}>
+                <aside className='bio'>
                     <p>
-                        I am a Fullstack web developer from North Carolina, and currently live with my husband and two cats. <br />
-                        Apart from coding, you can find me spending my time doing all things nerdy! Such as reading, <br />
-                        watching anime, playing Magic the Gathering, as well as D&D and playing video games! <br />
-                        <br />
+                        I am a Fullstack web developer from North Carolina, and currently <br />
+                        live with my husband and two cats. Apart from coding, you can find <br />
+                        me spending my time doing all things nerdy! Such as reading, <br />
+                        watching anime, playing Magic the Gathering, as well as D&D <br />
+                        and playing video games! <br />
                         <br />
                         I have created multiple projects using front-end technologies <br />
                         such as JavaScript, React, HTML, and CSS as well as back-end <br />
@@ -68,7 +72,6 @@ function About() {
                         Applications (SPAs).
                         <br />
                     </p>
-                    {/* insert section on hobbies */}
                 </aside>
             </div>
 
@@ -78,6 +81,7 @@ function About() {
                     <h2 className="activity-heading">
                         Coding <strong>Activity</strong>
                     </h2>
+                    {/* show full year of current activity */}
                     <GitHubCalendar
                         responsive={true}
                         username="apark8496"

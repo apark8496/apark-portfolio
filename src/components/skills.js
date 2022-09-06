@@ -14,8 +14,6 @@ function Skills() {
 	const platformSkills = SKILLS.filter(skill => skill.type === 'platform');
 
 
-	// add in more (frameworks/databases/programming languages --> not just front/back skill list)
-
 	// provide resume
 	return (
 		<section className='resume-section'>
@@ -33,6 +31,8 @@ function Skills() {
 					here.
 				</a>
 			</p>
+
+			{/* add in pdf viewer to display resume on portfolio */}
 			{/* <div className='resume-pdf'>
 				<Document
 					file="https://drive.google.com/file/d/1oNBfJwSB2rehwvO9XQ64tfgvXmAxgihI/view?usp=sharing">
