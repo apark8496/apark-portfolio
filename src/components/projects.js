@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
 
 
@@ -81,11 +81,11 @@ function Projects() {
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
                 <div className="wrapper-grid">
-                    <Row >
-                        <Col>
-                            <Card className="card"  key={project.title}>
+                    <div >
+                        <div>
+                            <Card className="card"  style={{ width: '30rem' }} key={project.title}>
                                 {/* project img overlay */}
-                                <Card.Img className="card-img" src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                                <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                                 <Card.Body className="card-info">
                                     {/* name of project */}
                                     <Card.Title className="text-title">{project.title}</Card.Title>
@@ -105,8 +105,8 @@ function Projects() {
                                     </a> */}
                                 </Card.Body>
                             </Card>
-                        </Col>
-                    </Row>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>

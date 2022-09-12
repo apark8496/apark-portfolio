@@ -119,7 +119,7 @@ h3, h5 {
 }
 
 /* need to fix the white space in the paragraph area */
-.bio {
+.bio  {
   background-color: var(--languid-lavender);
   max-width: 70%;
   border-radius: 10px;
@@ -147,7 +147,7 @@ h3, h5 {
   color: var(sage) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
-  padding-top: 10px !important;
+  padding-top: 25px !important;
 }
 
 .github-activity {
@@ -160,20 +160,23 @@ h3, h5 {
 
 /* * projects */ 
 
- .wrapper-grid {
-  display: grid;
+.wrapper-grid {
+  display: inline-grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
-  gap: 1rem;
+  grid-gap: 1rem;
   padding: 1rem;
   justify-content: center;
 }
 
 .card {
-  max-width: 30rem;
+  width: 300px;
+  height: 350px;
   border-radius: 1em;
   padding: 1.5rem;
   gap: 1em;
-  padding: 1.5rem;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* background: #f5f5f5; */
   position: relative;
   transition: 0.4s ease-out;
   box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
@@ -205,9 +208,9 @@ h3, h5 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   cursor: default;
-} 
+}
 
-/* Card Text */
+/*Text*/
 .text-title {
   color: #000000;
   font-size: 1.7rem;
@@ -217,9 +220,9 @@ h3, h5 {
   border-radius: 10px;
   padding: 1%;
   cursor: default;
-} 
+}
 
-/* Card Image */
+/*Image*/
 .card-img {
   width: 450px;
   height: 350px;
@@ -238,9 +241,15 @@ h3, h5 {
 
 .text-body:hover {
   background-color: var(--sage);
-} 
+}
 
-/* Hover */
+/* .tags {
+  background-color: var(--sage);
+  border-radius: 10px;
+  padding: 5px;  
+} */
+
+/*Hover*/
 .card:hover {
   -webkit-transform: translateY(5%);
   -ms-transform: translateY(5%);
@@ -257,7 +266,7 @@ h3, h5 {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0);
-} 
+}
 
 /* contact */
 .email {
