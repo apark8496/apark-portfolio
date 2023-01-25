@@ -15,7 +15,7 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path='/apark-portfolio' component={About} />
+          <Route exact path='/about' component={About} />
           <Route path='/projects' component={Projects} />
           <Route path='/contact' component={Contact} />
           <Route path='/skills' component={Skills} />
