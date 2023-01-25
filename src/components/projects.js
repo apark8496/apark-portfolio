@@ -80,9 +80,9 @@ function Projects() {
         <div>
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
-                <div className="wrapper-grid">
-                    <div >
-                        <div>
+                <div className="container">
+                    <div className="row" >
+                        <div className="col-4">
                             <Card className="card"  style={{ width: '30rem' }} key={project.title}>
                                 {/* project img overlay */}
                                 <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />

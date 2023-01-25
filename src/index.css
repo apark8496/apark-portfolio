@@ -160,8 +160,8 @@ h3, h5 {
 
 /* * projects */ 
 
-.wrapper-grid {
-  display: inline-grid;
+.container {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 30rem));
   grid-gap: 1rem;
   padding: 1rem;
@@ -173,7 +173,6 @@ h3, h5 {
   height: 350px;
   border-radius: 1em;
   padding: 1.5rem;
-  gap: 1em;
   /* display: flex;
   flex-wrap: wrap; */
   /* background: #f5f5f5; */
