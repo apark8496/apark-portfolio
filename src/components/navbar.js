@@ -11,15 +11,15 @@ function Navigation() {
 				<Navbar collapseOnSelect expand="md">
 					<Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
 					<Navbar.Collapse id="navbarScroll">
-						<Nav className="ml-auto" defaultActiveKey="/apark-portfolio">
-							<Navbar.Brand href="/apark-portfolio">
+						<Nav className="ml-auto" defaultActiveKey="/">
+							<Navbar.Brand href="/">
 								<h1 className="AP-logo">Ashley Park</h1>
 							</Navbar.Brand>
 							<Nav.Item>
 								<NavLink className="nav-link"
 									eventKey="1"
 									as={Link}
-									to="/apark-portfolio"
+									to="/"
 								>
 									About
 								</NavLink>
