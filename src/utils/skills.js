@@ -81,4 +81,10 @@ export const SKILLS = [
 		type: 'platform',
 
 	},
+	{
+		name: 'Netlify',
+		file: 'netlify.svg',
+		type: 'platform',
+
+	},
 ];
