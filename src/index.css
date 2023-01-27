@@ -18,7 +18,8 @@
   font-family: 'Offside', cursive;
   font-weight: 600;
   box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;}
 
 html {
   position: relative;
@@ -66,7 +67,6 @@ h3, h5 {
   color: var(--sage);
   font-size: 2.3rem;
   text-decoration: none;
-  text-align: center;
 }
 
 .AP-logo:hover {
@@ -74,33 +74,34 @@ h3, h5 {
   color: var(--languid-lavender);
 }
 
-/* fix nav bar display on bigger media q */
 .navbar {
   display: flex;
   flex-wrap: wrap;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.3rem !important;
+  align-content: space-around !important;
 }
 
+/* mobile design */
 .navbar-toggler {
-  padding: 0.25rem 1.5rem !important;
-  position: relative !important;
+background-color: var(--languid-lavender);
 }
 
+/* mobile design */
 .nav-item {
     list-style: none;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
-    color: var(--sage);
-    align-content: space-around !important;
+    /* width: 100%; */
+    align-content: space-around;
+    padding-right: 1rem;
+  
 }
 
 .nav-link {
-  color: var(--sage) !important;
-  margin: auto;
+  color: var(--dark-sage) !important;
 }
 
 .nav-link:hover {
@@ -121,16 +122,15 @@ h3, h5 {
 /* need to fix the white space in the paragraph area */
 .bio  {
   background-color: var(--languid-lavender);
-  max-width: 70%;
-  border-radius: 10px;
+  max-width: 80%;
+  border-radius: 5px;
   padding: 7%;
   color: #ffffff;
   /* opacity: 75%; */
   line-height: 2rem;
-  text-align: left;
   font-weight: 500;
   cursor: default;
-  box-shadow: var(--sage) 1px solid;
+  /* box-shadow: var(--sage) 1px solid; */
 }
 
 .my-pic {
@@ -139,6 +139,7 @@ h3, h5 {
   margin: 10px;
   box-shadow: var(--sage) 1px solid;
   border-radius: 10%;
+  padding-bottom: 2%;
 }
 
 /* github activity section */

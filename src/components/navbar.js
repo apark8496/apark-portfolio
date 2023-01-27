@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 function Navigation() {
 	return (
 		<>
-				<Navbar collapseOnSelect expand="lg">
-				<Container>
+				<Navbar className="navigation" collapseOnSelect expand="lg">
+				<Container className="container">
 					<Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
 					<Navbar.Collapse id="navbarScroll">
 						<Nav className="ml-auto" defaultActiveKey="/"> 
