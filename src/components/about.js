@@ -49,6 +49,8 @@ function About() {
                 </h3>
             </div>
             <div className='bio-container'>
+            <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
                 {/* import github profile picture */}
                 <img
                     className='my-pic' style={{width: "350px"}}
@@ -73,6 +75,7 @@ function About() {
                         <br />
                     </p>
                 </aside>
+                </Row>
             </div>
 
             {/* Github Activity Section */}
