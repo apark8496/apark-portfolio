@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 function Navigation() {
 	return (
 		<>
-			<Container>
-				<Navbar collapseOnSelect expand="md">
+				<Navbar collapseOnSelect expand="lg">
+				<Container>
 					<Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
 					<Navbar.Collapse id="navbarScroll">
 						<Nav className="ml-auto" defaultActiveKey="/"> 
@@ -19,7 +19,7 @@ function Navigation() {
 								<NavLink className="nav-link"
 									eventKey="1"
 									as={Link}
-									to="/about"
+									to="/"
 								>
 									About
 								</NavLink>
@@ -53,8 +53,8 @@ function Navigation() {
 							</Nav.Item>
 						</Nav>
 					</Navbar.Collapse>
+					</Container>
 				</Navbar>
-			</Container>
 		</>
 	);
 }
