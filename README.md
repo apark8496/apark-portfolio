@@ -1,7 +1,10 @@
-# Ashley Park
-<a href="https://apark8496.github.io/apark-portfolio/">![Deployed App](https://img.shields.io/badge/My%20Portfolio-pink.svg?style=for-the-badge)</a>
+# Ashley Park: Frontend Web Developer
 
-![Portfolio](https://github.com/apark8496/apark-portfolio/blob/0dc8fe8e1e8459c7571e14e128930c1a7059b634/public/assets/About.png)
+#### Click on the icon below to view my portfolio!
+
+
+<a href="https://apark-portfolio.netlify.app/"> ![Deployed App](https://img.shields.io/badge/My%20Portfolio-pink.svg?style=for-the-badge)</a>
+
 ## About Me 💻
 
 I'm a web developer from North Carolina, and currently live with my husband and two cats 🐈.
@@ -33,13 +36,17 @@ Apart from coding, you can find me spending my time doing all things nerdy! 📜
 ### Platforms
 
 ![](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
+![](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
 
 
 ### Github Stats
 ![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=apark8496) ![github stats](https://github-readme-stats.vercel.app/api?username=apark8496)
 
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=apark8496)](https://git.io/streak-stats)
+
 ## 🤝🏻 Want to Get in touch?
 
+#### Click on the icons below to contact me!
 <a href="https://www.linkedin.com/in/apark8496/" target="_blank" rel="noopener noreferrer">
   <img
     alt="Linkedin"
