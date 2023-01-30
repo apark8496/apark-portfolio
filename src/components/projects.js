@@ -15,37 +15,12 @@ function Projects() {
         //     description: "Current Project under development!"
         // },
         {
-            imagePath: "breaking-code",
-            title: "Breaking Code: Memory Game",
-            deployedUrl: "https://fathomless-retreat-80150.herokuapp.com/",
-            ghRepoUrl: "https://github.com/barrantesc/BreakingCode",
-            description: "A memory game application that makes coding technical interview questions fun by matching cards.",
-            tags: "React, NodeJS, ExpressJS, HTML, CSS, JavaScript, MongoDB, Apollo, JWT"
-        },
-        {
-            imagePath: "skittydex",
-            title: "Skittydex Pokemon Team Builder & Blog",
-            deployedUrl: "https://skittydex.herokuapp.com",
-            ghRepoUrl: "https://github.com/apark8496/SkittyDex",
-            description: "An app for trainers looking to build their ideal team, and find other trainers to battle, trade, or communicate in game with.",
-            tags: "NodeJS, ExpressJS, HTML, CSS, JavaScript, mySQL, sequelize, Handlebars, PokeAPI"
-
-        },
-        {
             imagePath: "book-hangover",
             title: "The Book Hangover Cure",
             deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
             ghRepoUrl: "https://github.com/apark8496/The-Book-Hangover-Cure",
             description: "An that allows the reader to search a book and receive similar recommendations. To add a little spice as a play on the website title, the reader is also provided with a random cocktail to try with the book they searched.",
             tags: "HTML, CSS, JavaScript, googleAPI, CocktailDB API"
-        },
-        {
-            imagePath: "budget-tracker",
-            title: "Budget Tracker",
-            deployedUrl: "https://personal-budget-pwa.herokuapp.com/",
-            ghRepoUrl: "https://github.com/apark8496/budget-tracker",
-            description: "An app that allows users to keep track of their personal budget. It can be updated offline/online.",
-            tags: "HTML, CSS, JavaScript, PWA, NoSQL, Mongoose"
         },
         {
             imagePath: "weather-dashboard",
@@ -68,10 +43,36 @@ function Projects() {
         {
             imagePath: "social",
             title: "Social Network: Backend",
+            deployedUrl: "https://youtu.be/NF04uPf6N7A",
             ghRepoUrl: "https://github.com/apark8496/social-network",
             description: "The backend for a social network where a user can be created,updated, and deleted. Friends, thoughts, and reactions can also be added, updated, and deleted.",
             tags: "HTML, CSS, JavaScript, dayJS, expressJS, Mongoose, Insomnia"
 
+        },
+        {
+            imagePath: "breaking-code",
+            title: "Breaking Code: Memory Game",
+            deployedUrl: "https://fathomless-retreat-80150.herokuapp.com/",
+            ghRepoUrl: "https://github.com/barrantesc/BreakingCode",
+            description: "A memory game application that makes coding technical interview questions fun by matching cards.",
+            tags: "React, NodeJS, ExpressJS, HTML, CSS, JavaScript, MongoDB, Apollo, JWT"
+        },
+        {
+            imagePath: "skittydex",
+            title: "Skittydex Pokemon Team Builder & Blog",
+            deployedUrl: "https://skittydex.herokuapp.com",
+            ghRepoUrl: "https://github.com/apark8496/SkittyDex",
+            description: "An app for trainers looking to build their ideal team, and find other trainers to battle, trade, or communicate in game with.",
+            tags: "NodeJS, ExpressJS, HTML, CSS, JavaScript, mySQL, sequelize, Handlebars, PokeAPI"
+
+        },
+        {
+            imagePath: "budget-tracker",
+            title: "Budget Tracker",
+            deployedUrl: "https://personal-budget-pwa.herokuapp.com/",
+            ghRepoUrl: "https://github.com/apark8496/budget-tracker",
+            description: "An app that allows users to keep track of their personal budget. It can be updated offline/online.",
+            tags: "HTML, CSS, JavaScript, PWA, NoSQL, Mongoose"
         }
 
     ])
@@ -83,12 +84,12 @@ function Projects() {
                 <div className="container">
                     <div className="row" >
                         <div className="col-4">
-                            <Card className="card"  style={{ width: '30rem' }} key={project.title}>
+                            <Card className="projects" key={project.title}>
                                 {/* project img overlay */}
-                                <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                                <Card.Img className="card-img" src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                                 <Card.Body className="card-info">
                                     {/* name of project */}
-                                    <Card.Title className="text-title">{project.title}</Card.Title>
+                                    <Card.Title className="card-description" id="title">{project.title}</Card.Title>
                                     {/* project description and links to gh/site */}
                                     <Card.Text className="card-description">{project.description}</Card.Text>
                                     <Card.Text className="card-description tags">Technologies: {project.tags}</Card.Text>
