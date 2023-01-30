@@ -84,7 +84,7 @@ function Projects() {
                 <div className="container">
                     <div className="row" >
                         <div className="col-4">
-                            <Card style={{ width: '30rem' }} key={project.title}>
+                            <Card className="projects" style={{ width: '30rem' }} key={project.title}>
                                 {/* project img overlay */}
                                 <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                                 <Card.Body className="card-info">
