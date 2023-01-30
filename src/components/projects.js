@@ -84,12 +84,12 @@ function Projects() {
                 <div className="container">
                     <div className="row" >
                         <div className="col-4">
-                            <Card className="projects" style={{ width: '30rem' }} key={project.title}>
+                            <Card className="projects" key={project.title}>
                                 {/* project img overlay */}
-                                <Card.Img className="card-img" style={{ width: '30rem' }} src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
+                                <Card.Img className="card-img" src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
                                 <Card.Body className="card-info">
                                     {/* name of project */}
-                                    <Card.Title className="text-title">{project.title}</Card.Title>
+                                    <Card.Title className="card-description" id="title">{project.title}</Card.Title>
                                     {/* project description and links to gh/site */}
                                     <Card.Text className="card-description">{project.description}</Card.Text>
                                     <Card.Text className="card-description tags">Technologies: {project.tags}</Card.Text>
