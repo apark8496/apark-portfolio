@@ -80,7 +80,7 @@ function About() {
 
             {/* Github Activity Section */}
             <div className='github-activity'>
-                <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                <Row style={{ justifyContent: "center", maxWidth: "90%" }}>
                     <h2 className="activity-heading">
                         Coding <strong>Activity</strong>
                     </h2>
@@ -90,10 +90,10 @@ function About() {
                         username="apark8496"
                         year={new Date().getFullYear()}
                         theme={activityTheme}
-                        blockSize={15}
-                        blockMargin={4}
-                        blockRadius={7}
-                        fontSize={16}
+                        blockSize={12.5}
+                        blockMargin={3}
+                        blockRadius={6}
+                        fontSize={13}
                      />
                 </Row>
             </div>
