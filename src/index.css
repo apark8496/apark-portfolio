@@ -123,14 +123,12 @@ background-color: var(--languid-lavender);
 .bio  {
   background-color: var(--languid-lavender);
   max-width: 80%;
-  border-radius: 5px;
-  padding: 7%;
+  border-radius: 10px;
   color: #ffffff;
   /* opacity: 75%; */
-  line-height: 2rem;
+  line-height: 3rem;
   font-weight: 500;
   cursor: default;
-  /* box-shadow: var(--sage) 1px solid; */
 }
 
 .my-pic {
@@ -146,16 +144,19 @@ background-color: var(--languid-lavender);
 .activity-heading {
   text-align: center;
   color: var(sage) !important;
-  font-size: 2.3em !important;
+  font-size: 2.1em !important;
   font-weight: 500 !important;
   padding-top: 25px !important;
 }
 
 .github-activity {
+  font-size: 1em;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 
@@ -169,7 +170,7 @@ background-color: var(--languid-lavender);
   justify-content: center;
 }
 
-.card {
+.projects {
   width: 300px;
   height: 350px;
   border-radius: 1em;
@@ -182,7 +183,7 @@ background-color: var(--languid-lavender);
   box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
 }
 
-.card:before {
+.projects:before {
   content: "";
   position: absolute;
   top: 0;
@@ -275,15 +276,14 @@ background-color: var(--languid-lavender);
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 0 15% 0 15%;
-  /* background-color: var(--languid-lavender); */
   padding: 6px;
   border-radius: 10px;
   transition: background-color 0.25s ease-in-out;
 }
 
 .email a {
-  font-size: 1.3rem;
-  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 600;
   color: black;
   transition: color 0.25s ease-in-out;
   padding: 10px;
@@ -361,13 +361,15 @@ background-color: var(--languid-lavender);
 
 #contact-section {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 2% 0;
+  align-items: center;
+  margin: auto;
+  max-width: 90%;
   background-color: var(--languid-lavender);
   color: #f5f5f5;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   opacity: 75%;
   padding: 20px;
   border-radius: 15px;
@@ -387,7 +389,7 @@ background-color: var(--languid-lavender);
   padding: 5px;
   border-radius: 5px;
   border: 1px solid var(--sage);
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 #contact-section input:focus,
@@ -400,6 +402,7 @@ background-color: var(--languid-lavender);
 .submit-btn {
   padding: 1%;
   font-weight: 500;
+  font-size: 1rem;
   background: var(--sage);
   color: #f5f5f5;
   border-radius: .5rem;
@@ -575,11 +578,6 @@ background-color: var(--languid-lavender);
     margin: auto;
   }
 
-  #contact-section {
-    width: 80%;
-    margin: auto;
-  }
-
   footer p {
     font-size: 18px;
   }
@@ -590,6 +588,9 @@ background-color: var(--languid-lavender);
     width: 95%;
   }
 
+  #contact-section {
+    max-width: 70%;
+  }
 
   .bio-container {
     flex-direction: row;
@@ -598,15 +599,11 @@ background-color: var(--languid-lavender);
 
   .bio {
     width: 70%;
-    padding: 0 30px 0 30px;
+    padding: 15px;
     margin: auto;
   }
 
   .text-title {
-    width: 70%;
-  }
-
-  #contact-section {
     width: 70%;
   }
 
