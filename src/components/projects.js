@@ -19,7 +19,7 @@ function Projects() {
             title: "The Book Hangover Cure",
             deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
             ghRepoUrl: "https://github.com/apark8496/The-Book-Hangover-Cure",
-            description: "An that allows the reader to search a book and receive similar recommendations. To add a little spice as a play on the website title, the reader is also provided with a random cocktail to try with the book they searched.",
+            description: "An app that allows the reader to search a book and receive similar recommendations. To add a little spice as a play on the website title, the reader is also provided with a random cocktail to try with the book they searched.",
             tags: "HTML, CSS, JavaScript, googleAPI, CocktailDB API"
         },
         {
