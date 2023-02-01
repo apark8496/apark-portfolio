@@ -31,7 +31,7 @@ Apart from coding, you can find me spending my time doing all things nerdy! 📜
 ### Databases
 
 ![](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
-![](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### Platforms
 
@@ -40,13 +40,16 @@ Apart from coding, you can find me spending my time doing all things nerdy! 📜
 
 
 ### Github Stats
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=apark8496) ![github stats](https://github-readme-stats.vercel.app/api?username=apark8496)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=apark8496&theme=material-palenight) ![github stats](https://github-readme-stats.vercel.app/api?username=apark8496&theme=dracula)
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=apark8496)](https://git.io/streak-stats)
+[![GitHub Streak](https://streak-stats.demolab.com?user=apark8496&theme=modern-lilac&hide_border=true)](https://git.io/streak-stats)
 
 ## 🤝🏻 Want to Get in touch?
 
 #### Click on the icons below to contact me!
+
+![](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)
+
 <a href="https://www.linkedin.com/in/apark8496/" target="_blank" rel="noopener noreferrer">
   <img
     alt="Linkedin"
@@ -60,4 +63,3 @@ Apart from coding, you can find me spending my time doing all things nerdy! 📜
        src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" 
        />
 </a>
-
