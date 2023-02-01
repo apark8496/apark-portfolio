@@ -1,6 +1,6 @@
 import React, { useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
-// import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 
 
@@ -81,9 +81,9 @@ function Projects() {
         <div>
             <h2> My Projects</h2>
             {featuredProjects.map((project) => (
-                <div className="container">
-                    <div className="row" >
-                        <div className="col-4">
+                <Container>
+                    <Row>
+                        <Col>
                             <Card className="projects" key={project.title}>
                                 {/* project img overlay */}
                                 <Card.Img className="card-img" src={require(`../assets/project-images/${project.imagePath}.png`)} alt={project.title} />
@@ -106,9 +106,9 @@ function Projects() {
                                     </a> */}
                                 </Card.Body>
                             </Card>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             ))}
         </div>
     )

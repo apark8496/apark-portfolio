@@ -1,19 +1,22 @@
 import React from "react";
 import { Nav, Navbar, NavLink } from "react-bootstrap";
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 import { Link } from "react-router-dom";
 
 
 function Navigation() {
 	return (
 		<>
-				<Navbar className="navigation" collapseOnSelect expand="lg">
-				<Container className="container">
-					<Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
-					<Navbar.Collapse id="navbarScroll">
-						<Nav className="ml-auto" defaultActiveKey="/"> 
+			<Navbar className="navigation" collapseOnSelect expand="lg">
+				<Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
+				<Navbar.Collapse id="navbarScroll">
+					<Nav defaultActiveKey="/">
 							<Navbar.Brand href="/">
-								<h1 className="AP-logo">Ashley Park</h1>
+								<img src="https://i.imgur.com/NN8PcF3.png"
+									border="0"
+									className="AP-logo"
+									alt="Ashley Park logo"
+								/> 
 							</Navbar.Brand>
 							<Nav.Item>
 								<NavLink className="nav-link"
@@ -51,10 +54,10 @@ function Navigation() {
 									Skills
 								</NavLink>
 							</Nav.Item>
-						</Nav>
-					</Navbar.Collapse>
-					</Container>
-				</Navbar>
+					</Nav>
+				</Navbar.Collapse>
+			</Navbar>
+
 		</>
 	);
 }

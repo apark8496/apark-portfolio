@@ -9,7 +9,7 @@ function Footer() {
 				<div className='social'>
 					<Icon className='icon' links={LINKS}></Icon>
 				</div>
-				<p className='copyright'> © 2022 Ashley Park</p>
+				<p className='copyright'> © 2023 Ashley Park</p>
 			</footer>
 		</div>
 	);
