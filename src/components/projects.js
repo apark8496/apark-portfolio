@@ -15,6 +15,15 @@ function Projects() {
         //     description: "Current Project under development!"
         // },
         {
+            imagePath: "skittydex",
+            title: "Skittydex Pokemon Team Builder & Blog",
+            deployedUrl: "https://skittydex.herokuapp.com",
+            ghRepoUrl: "https://github.com/apark8496/SkittyDex",
+            description: "An app for trainers looking to build their ideal team, and find other trainers to battle, trade, or communicate in game with.",
+            tags: "NodeJS, ExpressJS, HTML, CSS, JavaScript, mySQL, sequelize, Handlebars, PokeAPI"
+
+        },
+        {
             imagePath: "book-hangover",
             title: "The Book Hangover Cure",
             deployedUrl: "https://apark8496.github.io/The-Book-Hangover-Cure/",
@@ -56,15 +65,6 @@ function Projects() {
             ghRepoUrl: "https://github.com/barrantesc/BreakingCode",
             description: "A memory game application that makes coding technical interview questions fun by matching cards.",
             tags: "React, NodeJS, ExpressJS, HTML, CSS, JavaScript, MongoDB, Apollo, JWT"
-        },
-        {
-            imagePath: "skittydex",
-            title: "Skittydex Pokemon Team Builder & Blog",
-            deployedUrl: "https://skittydex.herokuapp.com",
-            ghRepoUrl: "https://github.com/apark8496/SkittyDex",
-            description: "An app for trainers looking to build their ideal team, and find other trainers to battle, trade, or communicate in game with.",
-            tags: "NodeJS, ExpressJS, HTML, CSS, JavaScript, mySQL, sequelize, Handlebars, PokeAPI"
-
         },
         {
             imagePath: "budget-tracker",
