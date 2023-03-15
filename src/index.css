@@ -65,18 +65,10 @@ h5 {
 
 /* Navbar */
 
- 
-/* .navbar {
-  display: flex;
-  flex-wrap: wrap;
-  transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  align-content: center !important;
-}  */
 
 /* mobile design */
 .navbar-toggler {
-  background-color: var(--languid-lavender);
+  background-color: rgba(163, 172, 155, 0.5);
 }
 
 /* mobile design */

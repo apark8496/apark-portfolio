@@ -17,7 +17,7 @@ function Projects() {
         {
             imagePath: "skittydex",
             title: "Skittydex Pokemon Team Builder & Blog",
-            deployedUrl: "https://skittydex.herokuapp.com",
+            deployedUrl: "https://skittydex.onrender.com/",
             ghRepoUrl: "https://github.com/apark8496/SkittyDex",
             description: "An app for trainers looking to build their ideal team, and find other trainers to battle, trade, or communicate in game with.",
             tags: "NodeJS, ExpressJS, HTML, CSS, JavaScript, mySQL, sequelize, Handlebars, PokeAPI"
