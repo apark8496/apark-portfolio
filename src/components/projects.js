@@ -69,7 +69,7 @@ function Projects() {
         {
             imagePath: "budget-tracker",
             title: "Budget Tracker",
-            deployedUrl: "https://personal-budget-pwa.herokuapp.com/",
+            deployedUrl: "https://budget-tracker-kzeu.onrender.com",
             ghRepoUrl: "https://github.com/apark8496/budget-tracker",
             description: "An app that allows users to keep track of their personal budget. It can be updated offline/online.",
             tags: "HTML, CSS, JavaScript, PWA, NoSQL, Mongoose"
