@@ -24,7 +24,7 @@ function Skills() {
 				View or download my full resume
 				<a
 					className='resume-link'
-					href='https://drive.google.com/file/d/19PvFF4LU0tpdJX3gcpiqrJkXetaB4vAk/view?usp=sharing'
+					href='https://docs.google.com/document/d/1ZDZcYdA3wTJSFb3txDRiFT5XmcGG0IzRrS-RuF4PKFo/edit?usp=sharing'
 					target="_blank"
 					rel="noreferrer"
 				>
